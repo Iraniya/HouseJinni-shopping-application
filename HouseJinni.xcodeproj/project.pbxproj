@@ -10,10 +10,18 @@
 		2116066C1D76ACDF00860E2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2116066B1D76ACDF00860E2A /* main.m */; };
 		2116066F1D76ACDF00860E2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2116066E1D76ACDF00860E2A /* AppDelegate.m */; };
 		211606721D76ACDF00860E2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 211606711D76ACDF00860E2A /* ViewController.m */; };
-		211606751D76ACDF00860E2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 211606731D76ACDF00860E2A /* Main.storyboard */; };
 		211606771D76ACDF00860E2A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211606761D76ACDF00860E2A /* Images.xcassets */; };
 		2116067A1D76ACDF00860E2A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 211606781D76ACDF00860E2A /* LaunchScreen.xib */; };
 		211606861D76ACE000860E2A /* HouseJinniTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 211606851D76ACE000860E2A /* HouseJinniTests.m */; };
+		211606901D76AD8F00860E2A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2116068F1D76AD8F00860E2A /* ViewController.xib */; };
+		6FFA31FA1D7E8F1B0037EAF1 /* UserDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFA31F91D7E8F1B0037EAF1 /* UserDataModel.m */; };
+		D052A8741D780F44004C8306 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D052A8731D780F44004C8306 /* Default-568h@2x.png */; };
+		D052A8781D7812BF004C8306 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D052A8761D7812BF004C8306 /* HomeViewController.m */; };
+		D052A8791D7812BF004C8306 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D052A8771D7812BF004C8306 /* HomeViewController.xib */; };
+		D0688ABC1D7802AE00FF9A05 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0688ABA1D7802AE00FF9A05 /* SignUpViewController.m */; };
+		D0688ABD1D7802AE00FF9A05 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0688ABB1D7802AE00FF9A05 /* SignUpViewController.xib */; };
+		D0688AC11D78041A00FF9A05 /* SignUpTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0688ABF1D78041A00FF9A05 /* SignUpTableViewCell.m */; };
+		D0688AC21D78041A00FF9A05 /* SignUpTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0688AC01D78041A00FF9A05 /* SignUpTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +42,24 @@
 		2116066E1D76ACDF00860E2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		211606701D76ACDF00860E2A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		211606711D76ACDF00860E2A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		211606741D76ACDF00860E2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		211606761D76ACDF00860E2A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		211606791D76ACDF00860E2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2116067F1D76ACDF00860E2A /* HouseJinniTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HouseJinniTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		211606841D76ACE000860E2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		211606851D76ACE000860E2A /* HouseJinniTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HouseJinniTests.m; sourceTree = "<group>"; };
+		2116068F1D76AD8F00860E2A /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		6FFA31F81D7E8F1B0037EAF1 /* UserDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDataModel.h; sourceTree = "<group>"; };
+		6FFA31F91D7E8F1B0037EAF1 /* UserDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDataModel.m; sourceTree = "<group>"; };
+		D052A8731D780F44004C8306 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D052A8751D7812BF004C8306 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		D052A8761D7812BF004C8306 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		D052A8771D7812BF004C8306 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		D0688AB91D7802AE00FF9A05 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		D0688ABA1D7802AE00FF9A05 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		D0688ABB1D7802AE00FF9A05 /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		D0688ABE1D78041A00FF9A05 /* SignUpTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpTableViewCell.h; sourceTree = "<group>"; };
+		D0688ABF1D78041A00FF9A05 /* SignUpTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpTableViewCell.m; sourceTree = "<group>"; };
+		D0688AC01D78041A00FF9A05 /* SignUpTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +83,8 @@
 		2116065D1D76ACDE00860E2A = {
 			isa = PBXGroup;
 			children = (
+				D052A8731D780F44004C8306 /* Default-568h@2x.png */,
+				6FFA31FB1D7E8F1F0037EAF1 /* UserDataModel */,
 				211606681D76ACDF00860E2A /* HouseJinni */,
 				211606821D76ACDF00860E2A /* HouseJinniTests */,
 				211606671D76ACDF00860E2A /* Products */,
@@ -83,9 +105,9 @@
 			children = (
 				2116066D1D76ACDF00860E2A /* AppDelegate.h */,
 				2116066E1D76ACDF00860E2A /* AppDelegate.m */,
-				211606701D76ACDF00860E2A /* ViewController.h */,
-				211606711D76ACDF00860E2A /* ViewController.m */,
-				211606731D76ACDF00860E2A /* Main.storyboard */,
+				D01507361D78046B005D0BA0 /* LogIn */,
+				D01507351D78045A005D0BA0 /* SignUp */,
+				D052A87A1D7812C8004C8306 /* Home */,
 				211606761D76ACDF00860E2A /* Images.xcassets */,
 				211606781D76ACDF00860E2A /* LaunchScreen.xib */,
 				211606691D76ACDF00860E2A /* Supporting Files */,
@@ -117,6 +139,56 @@
 				211606841D76ACE000860E2A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6FFA31FB1D7E8F1F0037EAF1 /* UserDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				6FFA31F81D7E8F1B0037EAF1 /* UserDataModel.h */,
+				6FFA31F91D7E8F1B0037EAF1 /* UserDataModel.m */,
+			);
+			name = UserDataModel;
+			sourceTree = "<group>";
+		};
+		D01507341D780443005D0BA0 /* SignUpCell */ = {
+			isa = PBXGroup;
+			children = (
+				D0688ABE1D78041A00FF9A05 /* SignUpTableViewCell.h */,
+				D0688ABF1D78041A00FF9A05 /* SignUpTableViewCell.m */,
+				D0688AC01D78041A00FF9A05 /* SignUpTableViewCell.xib */,
+			);
+			name = SignUpCell;
+			sourceTree = "<group>";
+		};
+		D01507351D78045A005D0BA0 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				D0688AB91D7802AE00FF9A05 /* SignUpViewController.h */,
+				D0688ABA1D7802AE00FF9A05 /* SignUpViewController.m */,
+				D0688ABB1D7802AE00FF9A05 /* SignUpViewController.xib */,
+				D01507341D780443005D0BA0 /* SignUpCell */,
+			);
+			name = SignUp;
+			sourceTree = "<group>";
+		};
+		D01507361D78046B005D0BA0 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				211606701D76ACDF00860E2A /* ViewController.h */,
+				211606711D76ACDF00860E2A /* ViewController.m */,
+				2116068F1D76AD8F00860E2A /* ViewController.xib */,
+			);
+			name = LogIn;
+			sourceTree = "<group>";
+		};
+		D052A87A1D7812C8004C8306 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D052A8751D7812BF004C8306 /* HomeViewController.h */,
+				D052A8761D7812BF004C8306 /* HomeViewController.m */,
+				D052A8771D7812BF004C8306 /* HomeViewController.xib */,
+			);
+			name = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +235,7 @@
 		2116065E1D76ACDE00860E2A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Iraniya;
 				TargetAttributes = {
 					211606651D76ACDF00860E2A = {
@@ -199,9 +271,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				211606751D76ACDF00860E2A /* Main.storyboard in Resources */,
+				D0688AC21D78041A00FF9A05 /* SignUpTableViewCell.xib in Resources */,
 				2116067A1D76ACDF00860E2A /* LaunchScreen.xib in Resources */,
+				211606901D76AD8F00860E2A /* ViewController.xib in Resources */,
+				D0688ABD1D7802AE00FF9A05 /* SignUpViewController.xib in Resources */,
 				211606771D76ACDF00860E2A /* Images.xcassets in Resources */,
+				D052A8791D7812BF004C8306 /* HomeViewController.xib in Resources */,
+				D052A8741D780F44004C8306 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +295,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0688AC11D78041A00FF9A05 /* SignUpTableViewCell.m in Sources */,
+				6FFA31FA1D7E8F1B0037EAF1 /* UserDataModel.m in Sources */,
 				211606721D76ACDF00860E2A /* ViewController.m in Sources */,
 				2116066F1D76ACDF00860E2A /* AppDelegate.m in Sources */,
+				D0688ABC1D7802AE00FF9A05 /* SignUpViewController.m in Sources */,
 				2116066C1D76ACDF00860E2A /* main.m in Sources */,
+				D052A8781D7812BF004C8306 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +324,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		211606731D76ACDF00860E2A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				211606741D76ACDF00860E2A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		211606781D76ACDF00860E2A /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +356,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -299,7 +372,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -336,7 +409,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -348,7 +421,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HouseJinni/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iraniya.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -358,7 +433,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HouseJinni/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iraniya.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -376,7 +453,9 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = HouseJinniTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iraniya.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HouseJinni.app/HouseJinni";
 			};
@@ -391,7 +470,9 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = HouseJinniTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iraniya.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HouseJinni.app/HouseJinni";
 			};
@@ -416,6 +497,7 @@
 				2116068B1D76ACE000860E2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2116068C1D76ACE000860E2A /* Build configuration list for PBXNativeTarget "HouseJinniTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +506,7 @@
 				2116068E1D76ACE000860E2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

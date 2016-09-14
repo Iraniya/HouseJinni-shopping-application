@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface SignUpTableViewCell : UITableViewCell
+{
+    
+}
 
+@property IBOutlet UITextField *customTextField;
 @end

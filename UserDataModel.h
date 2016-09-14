@@ -8,6 +8,24 @@
 
 #import <Foundation/Foundation.h>
 
-@interface UserDataModel : NSObject
+typedef enum UserType:NSInteger
+{
+    UserTypeCustomer = 0, // default customer
+    UserTypeSubAdmin = 1, // subAdmin
+    UserTypeAdmin    = 2, // admin
+}UserType;
 
+@interface UserDataModel : NSObject
+{
+    NSMutableDictionary *userDetailsDictionary;
+}
+@property(nonatomic)UserType userType;
+@property (nonatomic,strong) NSString *userName;
+@property (nonatomic,strong) NSString *userId;
+@property (nonatomic,strong) NSString *firstName;
+@property (nonatomic,strong) NSString *lastName;
+@property (nonatomic,strong) NSString *emailId;
+@property (nonatomic,strong) NSString *password;
+
+-(id)initWithData:(NSMutableDictionary*)userDictionary;
 @end

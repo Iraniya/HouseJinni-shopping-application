@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "SignUpViewController.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +16,23 @@
 
 @implementation AppDelegate
 
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    ViewController *viewControllerObject = [[ViewController alloc]initWithNibName:@"ViewController" bundle:nil];
+    
+    
+    UINavigationController *navigationObject = [[UINavigationController alloc]initWithRootViewController:viewControllerObject];
+    
+    self.window.rootViewController = navigationObject;
+    
+    [self.window makeKeyAndVisible];
+    
+    //init
+    [self InitBeforeAppStart];
     return YES;
 }
 
@@ -42,4 +58,13 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark - Init for App
+-(void)InitBeforeAppStart
+{
+    
+    BOOL isMainAdmin = NO;
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setBool:isMainAdmin forKey:@"isMainAdmin"];
+    [userDefaults synchronize];
+}
 @end

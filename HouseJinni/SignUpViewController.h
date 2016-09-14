@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SignUpViewController : UIViewController
+@interface SignUpViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate>
+{
+    
+    BOOL isMainAdmin;
+    
+    IBOutlet UITableView *signUpTableView;  //table view
+    
+    NSMutableDictionary *userDetailsDictionary; 
+    
+    NSMutableArray *userSignUpDetailsArray; //user array
+    NSMutableArray *registrationArray;      //registration form
+}
 
+@property(nonatomic,strong)NSMutableDictionary *registerDictionary; // user details
 @end

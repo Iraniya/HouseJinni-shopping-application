@@ -14,7 +14,19 @@
 		2116067A1D76ACDF00860E2A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 211606781D76ACDF00860E2A /* LaunchScreen.xib */; };
 		211606861D76ACE000860E2A /* HouseJinniTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 211606851D76ACE000860E2A /* HouseJinniTests.m */; };
 		211606901D76AD8F00860E2A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2116068F1D76AD8F00860E2A /* ViewController.xib */; };
+		6F2E14751D7FE37B0020AA94 /* UIFont+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2E14741D7FE37B0020AA94 /* UIFont+Utility.m */; };
+		6F7CBBC01D8138DA00F2F541 /* SignUpButtonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7CBBBE1D8138DA00F2F541 /* SignUpButtonTableViewCell.m */; };
+		6F7CBBC11D8138DA00F2F541 /* SignUpButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F7CBBBF1D8138DA00F2F541 /* SignUpButtonTableViewCell.xib */; };
+		6F7CBBC41D8139D600F2F541 /* unchecked_checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F7CBBC31D8139D600F2F541 /* unchecked_checkbox.png */; };
+		6F7CBBC61D8139EE00F2F541 /* checked_checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F7CBBC51D8139EE00F2F541 /* checked_checkbox.png */; };
 		6FFA31FA1D7E8F1B0037EAF1 /* UserDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFA31F91D7E8F1B0037EAF1 /* UserDataModel.m */; };
+		ABB9BB5C1D87F25200E84492 /* InventoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB9BB5A1D87F25200E84492 /* InventoryViewController.m */; };
+		ABB9BB5D1D87F25200E84492 /* InventoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABB9BB5B1D87F25200E84492 /* InventoryViewController.xib */; };
+		ABB9BB611D87FFD700E84492 /* AddButton.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB9BB601D87FFD700E84492 /* AddButton.png */; };
+		ABB9BB651D88072900E84492 /* AddMainCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB9BB631D88072900E84492 /* AddMainCategoryViewController.m */; };
+		ABB9BB661D88072900E84492 /* AddMainCategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABB9BB641D88072900E84492 /* AddMainCategoryViewController.xib */; };
+		ABB9BB6B1D880EF500E84492 /* addCatagoryTextFieldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB9BB691D880EF500E84492 /* addCatagoryTextFieldTableViewCell.m */; };
+		ABB9BB6C1D880EF500E84492 /* addCatagoryTextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABB9BB6A1D880EF500E84492 /* addCatagoryTextFieldTableViewCell.xib */; };
 		D052A8741D780F44004C8306 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D052A8731D780F44004C8306 /* Default-568h@2x.png */; };
 		D052A8781D7812BF004C8306 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D052A8761D7812BF004C8306 /* HomeViewController.m */; };
 		D052A8791D7812BF004C8306 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D052A8771D7812BF004C8306 /* HomeViewController.xib */; };
@@ -48,8 +60,26 @@
 		211606841D76ACE000860E2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		211606851D76ACE000860E2A /* HouseJinniTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HouseJinniTests.m; sourceTree = "<group>"; };
 		2116068F1D76AD8F00860E2A /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		6F2E14731D7FE37B0020AA94 /* UIFont+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Utility.h"; sourceTree = "<group>"; };
+		6F2E14741D7FE37B0020AA94 /* UIFont+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Utility.m"; sourceTree = "<group>"; };
+		6F2E14781D7FED400020AA94 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		6F7CBBBD1D8138DA00F2F541 /* SignUpButtonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpButtonTableViewCell.h; sourceTree = "<group>"; };
+		6F7CBBBE1D8138DA00F2F541 /* SignUpButtonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpButtonTableViewCell.m; sourceTree = "<group>"; };
+		6F7CBBBF1D8138DA00F2F541 /* SignUpButtonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpButtonTableViewCell.xib; sourceTree = "<group>"; };
+		6F7CBBC31D8139D600F2F541 /* unchecked_checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = unchecked_checkbox.png; path = ../unchecked_checkbox.png; sourceTree = "<group>"; };
+		6F7CBBC51D8139EE00F2F541 /* checked_checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checked_checkbox.png; path = ../checked_checkbox.png; sourceTree = "<group>"; };
 		6FFA31F81D7E8F1B0037EAF1 /* UserDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDataModel.h; sourceTree = "<group>"; };
 		6FFA31F91D7E8F1B0037EAF1 /* UserDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDataModel.m; sourceTree = "<group>"; };
+		ABB9BB591D87F25200E84492 /* InventoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventoryViewController.h; sourceTree = "<group>"; };
+		ABB9BB5A1D87F25200E84492 /* InventoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventoryViewController.m; sourceTree = "<group>"; };
+		ABB9BB5B1D87F25200E84492 /* InventoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InventoryViewController.xib; sourceTree = "<group>"; };
+		ABB9BB601D87FFD700E84492 /* AddButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddButton.png; sourceTree = "<group>"; };
+		ABB9BB621D88072900E84492 /* AddMainCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMainCategoryViewController.h; sourceTree = "<group>"; };
+		ABB9BB631D88072900E84492 /* AddMainCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMainCategoryViewController.m; sourceTree = "<group>"; };
+		ABB9BB641D88072900E84492 /* AddMainCategoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddMainCategoryViewController.xib; sourceTree = "<group>"; };
+		ABB9BB681D880EF500E84492 /* addCatagoryTextFieldTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addCatagoryTextFieldTableViewCell.h; sourceTree = "<group>"; };
+		ABB9BB691D880EF500E84492 /* addCatagoryTextFieldTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addCatagoryTextFieldTableViewCell.m; sourceTree = "<group>"; };
+		ABB9BB6A1D880EF500E84492 /* addCatagoryTextFieldTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = addCatagoryTextFieldTableViewCell.xib; sourceTree = "<group>"; };
 		D052A8731D780F44004C8306 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D052A8751D7812BF004C8306 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		D052A8761D7812BF004C8306 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
@@ -84,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				D052A8731D780F44004C8306 /* Default-568h@2x.png */,
+				ABB9BB5F1D87FFD700E84492 /* images */,
 				6FFA31FB1D7E8F1F0037EAF1 /* UserDataModel */,
 				211606681D76ACDF00860E2A /* HouseJinni */,
 				211606821D76ACDF00860E2A /* HouseJinniTests */,
@@ -107,6 +138,8 @@
 				2116066E1D76ACDF00860E2A /* AppDelegate.m */,
 				D01507361D78046B005D0BA0 /* LogIn */,
 				D01507351D78045A005D0BA0 /* SignUp */,
+				ABB9BB5E1D87F25700E84492 /* Inventory */,
+				ABB9BB671D88073000E84492 /* Add MainCategory */,
 				D052A87A1D7812C8004C8306 /* Home */,
 				211606761D76ACDF00860E2A /* Images.xcassets */,
 				211606781D76ACDF00860E2A /* LaunchScreen.xib */,
@@ -141,23 +174,85 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6F2E14761D7FE3810020AA94 /* Catagory */ = {
+			isa = PBXGroup;
+			children = (
+				6F2E14731D7FE37B0020AA94 /* UIFont+Utility.h */,
+				6F2E14741D7FE37B0020AA94 /* UIFont+Utility.m */,
+			);
+			name = Catagory;
+			sourceTree = "<group>";
+		};
+		6F7CBBC21D8138E300F2F541 /* ButtonCell */ = {
+			isa = PBXGroup;
+			children = (
+				6F7CBBBD1D8138DA00F2F541 /* SignUpButtonTableViewCell.h */,
+				6F7CBBBE1D8138DA00F2F541 /* SignUpButtonTableViewCell.m */,
+				6F7CBBBF1D8138DA00F2F541 /* SignUpButtonTableViewCell.xib */,
+			);
+			name = ButtonCell;
+			sourceTree = "<group>";
+		};
 		6FFA31FB1D7E8F1F0037EAF1 /* UserDataModel */ = {
 			isa = PBXGroup;
 			children = (
+				6F2E14781D7FED400020AA94 /* PrefixHeader.pch */,
 				6FFA31F81D7E8F1B0037EAF1 /* UserDataModel.h */,
 				6FFA31F91D7E8F1B0037EAF1 /* UserDataModel.m */,
+				6F2E14761D7FE3810020AA94 /* Catagory */,
 			);
 			name = UserDataModel;
 			sourceTree = "<group>";
 		};
-		D01507341D780443005D0BA0 /* SignUpCell */ = {
+		ABB9BB5E1D87F25700E84492 /* Inventory */ = {
+			isa = PBXGroup;
+			children = (
+				ABB9BB591D87F25200E84492 /* InventoryViewController.h */,
+				ABB9BB5A1D87F25200E84492 /* InventoryViewController.m */,
+				ABB9BB5B1D87F25200E84492 /* InventoryViewController.xib */,
+			);
+			name = Inventory;
+			sourceTree = "<group>";
+		};
+		ABB9BB5F1D87FFD700E84492 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				6F7CBBC31D8139D600F2F541 /* unchecked_checkbox.png */,
+				ABB9BB601D87FFD700E84492 /* AddButton.png */,
+				6F7CBBC51D8139EE00F2F541 /* checked_checkbox.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		ABB9BB671D88073000E84492 /* Add MainCategory */ = {
+			isa = PBXGroup;
+			children = (
+				ABB9BB621D88072900E84492 /* AddMainCategoryViewController.h */,
+				ABB9BB631D88072900E84492 /* AddMainCategoryViewController.m */,
+				ABB9BB641D88072900E84492 /* AddMainCategoryViewController.xib */,
+				ABB9BB6D1D880EFA00E84492 /* TextField */,
+			);
+			name = "Add MainCategory";
+			sourceTree = "<group>";
+		};
+		ABB9BB6D1D880EFA00E84492 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				ABB9BB681D880EF500E84492 /* addCatagoryTextFieldTableViewCell.h */,
+				ABB9BB691D880EF500E84492 /* addCatagoryTextFieldTableViewCell.m */,
+				ABB9BB6A1D880EF500E84492 /* addCatagoryTextFieldTableViewCell.xib */,
+			);
+			name = TextField;
+			sourceTree = "<group>";
+		};
+		D01507341D780443005D0BA0 /* TextFieldCell */ = {
 			isa = PBXGroup;
 			children = (
 				D0688ABE1D78041A00FF9A05 /* SignUpTableViewCell.h */,
 				D0688ABF1D78041A00FF9A05 /* SignUpTableViewCell.m */,
 				D0688AC01D78041A00FF9A05 /* SignUpTableViewCell.xib */,
 			);
-			name = SignUpCell;
+			name = TextFieldCell;
 			sourceTree = "<group>";
 		};
 		D01507351D78045A005D0BA0 /* SignUp */ = {
@@ -166,7 +261,8 @@
 				D0688AB91D7802AE00FF9A05 /* SignUpViewController.h */,
 				D0688ABA1D7802AE00FF9A05 /* SignUpViewController.m */,
 				D0688ABB1D7802AE00FF9A05 /* SignUpViewController.xib */,
-				D01507341D780443005D0BA0 /* SignUpCell */,
+				D01507341D780443005D0BA0 /* TextFieldCell */,
+				6F7CBBC21D8138E300F2F541 /* ButtonCell */,
 			);
 			name = SignUp;
 			sourceTree = "<group>";
@@ -272,10 +368,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0688AC21D78041A00FF9A05 /* SignUpTableViewCell.xib in Resources */,
+				ABB9BB611D87FFD700E84492 /* AddButton.png in Resources */,
+				6F7CBBC61D8139EE00F2F541 /* checked_checkbox.png in Resources */,
+				ABB9BB6C1D880EF500E84492 /* addCatagoryTextFieldTableViewCell.xib in Resources */,
 				2116067A1D76ACDF00860E2A /* LaunchScreen.xib in Resources */,
 				211606901D76AD8F00860E2A /* ViewController.xib in Resources */,
+				6F7CBBC11D8138DA00F2F541 /* SignUpButtonTableViewCell.xib in Resources */,
+				ABB9BB5D1D87F25200E84492 /* InventoryViewController.xib in Resources */,
+				6F7CBBC41D8139D600F2F541 /* unchecked_checkbox.png in Resources */,
 				D0688ABD1D7802AE00FF9A05 /* SignUpViewController.xib in Resources */,
 				211606771D76ACDF00860E2A /* Images.xcassets in Resources */,
+				ABB9BB661D88072900E84492 /* AddMainCategoryViewController.xib in Resources */,
 				D052A8791D7812BF004C8306 /* HomeViewController.xib in Resources */,
 				D052A8741D780F44004C8306 /* Default-568h@2x.png in Resources */,
 			);
@@ -300,8 +403,13 @@
 				211606721D76ACDF00860E2A /* ViewController.m in Sources */,
 				2116066F1D76ACDF00860E2A /* AppDelegate.m in Sources */,
 				D0688ABC1D7802AE00FF9A05 /* SignUpViewController.m in Sources */,
+				ABB9BB6B1D880EF500E84492 /* addCatagoryTextFieldTableViewCell.m in Sources */,
 				2116066C1D76ACDF00860E2A /* main.m in Sources */,
 				D052A8781D7812BF004C8306 /* HomeViewController.m in Sources */,
+				6F7CBBC01D8138DA00F2F541 /* SignUpButtonTableViewCell.m in Sources */,
+				6F2E14751D7FE37B0020AA94 /* UIFont+Utility.m in Sources */,
+				ABB9BB5C1D87F25200E84492 /* InventoryViewController.m in Sources */,
+				ABB9BB651D88072900E84492 /* AddMainCategoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

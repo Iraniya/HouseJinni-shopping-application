@@ -11,6 +11,7 @@
 #import "UserDataModel.h"
 #import "UIFont+Utility.h"
 #import "InventoryViewController.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
 
@@ -18,25 +19,32 @@
 
 @implementation ViewController
 {
-    UserDataModel *userDataModelObject ;
+    AppDelegate *appDelegateObject;
+    UserDataModel *userDataModelObject;
+    NSString *mainAdminEmailId;
+    NSString *mainAdminPassword;
 }
 
 #pragma mark - Init
 -(void)viewDidLoad
 {
+    //fetching userdefault values
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     isMainAdmin = [userDefaults boolForKey:@"isMainAdmin"];
     if (isMainAdmin == true) {
         mainAdminButton.hidden =true;
     }
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
     //textField Related things Eg. placeholder
     [self CreateTextField];
     mainAdminView.hidden = true;
     
     [self navigationMethods];
     [self ScrollViewMethods];
+    
+    appDelegateObject = [[UIApplication sharedApplication]delegate];
     
 }
 
@@ -60,15 +68,12 @@
     //PlaceHolder
     mainAdminEmailIdTextField.placeholder =@"Email Id";
     mainAdminPasswordTextField.placeholder = @"Password";
-    
 }
-
 
 #pragma mark - Main Admin
 - (IBAction)mainAdminBtn:(id)sender {
     
     mainAdminView.hidden =false;
-    
 }
 
 #pragma mark - Sign In
@@ -79,20 +84,20 @@
     
     BOOL isDataMatch = [self checkEmailPassword:emailId AndPasswordIs:password];
     isDataMatch = true;
-    if (isDataMatch) {
+    if (isDataMatch){
         InventoryViewController *inventoryViewControllerObject = [[InventoryViewController alloc]initWithNibName:@"InventoryViewController" bundle:nil];
         [self.navigationController pushViewController:inventoryViewControllerObject animated:YES];
     }
-    else
-    {
+    else{
         UIAlertView *alt=[[UIAlertView alloc]initWithTitle:@"Alert View"message:@"Please enter valid username or Password" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
         [alt show];
     }
 }
 
+//function to check emailid password
 -(BOOL)checkEmailPassword:(NSString*)emailId AndPasswordIs :(NSString*)password
 {
-    //get data than check
+    
     if ([emailId isEqualToString:emailId]) {
         if ([password isEqualToString:password]) {
             return true;
@@ -119,6 +124,7 @@
 
 -(IBAction)okBtn:(id)sender
 {
+    /*
     NSString *mainEmailId = mainAdminEmailIdTextField.text;
     NSString *mainPassword = mainAdminPasswordTextField.text;
     
@@ -127,6 +133,23 @@
             isMainAdmin = true;
             NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
             [userDefaults setBool:YES forKey:@"isMainAdmin"];
+            [userDefaults synchronize];
+            mainAdminView.hidden = true;
+            
+            [self viewDidLoad];
+        }
+    }*/
+    
+    [self FetchMainAdminDataFromDatabase];
+    
+    NSString *mainEmailId = mainAdminEmailIdTextField.text;
+    NSString *mainPassword = mainAdminPasswordTextField.text;
+    
+    if ([mainEmailId isEqualToString:mainAdminEmailId]) {
+        if ([mainPassword isEqualToString:mainAdminPassword]) {
+            isMainAdmin = true;
+            NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+            [userDefaults setBool:isMainAdmin forKey:@"isMainAdmin"];
             [userDefaults synchronize];
             mainAdminView.hidden = true;
             
@@ -159,5 +182,20 @@
             [scrollViewObject scrollRectToVisible:CGRectMake(textField.frame.origin.x, textField.frame.origin.y+310, textField.frame.size.width, textField.frame.size.height) animated:YES];
         }
     }
+}
+
+#pragma mark- DataBase Method-
+
+-(void)FetchMainAdminDataFromDatabase
+{
+    FMResultSet *resultSet= [appDelegateObject.dataBaseObject executeQuery:@"select * from mainadmin"];
+    while ([resultSet next]){
+        NSLog(@"%@",resultSet.resultDictionary);
+        NSLog(@"%@",[resultSet stringForColumn:@"emailid"]);
+        NSLog(@"%@",[resultSet stringForColumn:@"password"]);
+        mainAdminEmailId= [resultSet stringForColumn:@"emailid"];
+        mainAdminPassword= [resultSet stringForColumn:@"password"];
+    }
+    
 }
 @end

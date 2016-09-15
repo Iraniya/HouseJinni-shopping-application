@@ -11,6 +11,7 @@
 #import "SignUpButtonTableViewCell.h"
 #import "UserDataModel.h"
 #import "UIFont+Utility.h"
+#import "AppDelegate.h"
 
 @interface SignUpViewController ()
 
@@ -42,6 +43,11 @@
     userDetailsDictionary = [[NSMutableDictionary alloc]init];
     NSLog(@"%@",userDetailsDictionary);
     [self navigationMethods];
+    
+   
+     appDelegateObject=[[UIApplication sharedApplication]delegate];
+   
+  
 }
 
 
@@ -66,6 +72,9 @@
     //store current user signUp details in database
     //pending
    NSLog(@"user details %@",userDetailsDictionary);
+    
+    //caliing insert method to store dictionary data in database
+    [self insertDataToDatabse];
 }
 
 
@@ -251,5 +260,51 @@
 }
 /////------------- TextField methods ends here -----------/////
 
+#pragma mark-Database Methods-
 
+/////------------- Database methods start here -----------/////
+/*
+-(void)getDatabseBundlePath
+{
+    strDBBundlePath=[[NSBundle mainBundle]pathForResource:@"HouseJinni" ofType:@"sqlite"];
+    NSLog(@"bundlePath:: %@",strDBBundlePath);
+}
+-(void)copyDatabaseFromBundleToDirectory
+{
+    NSFileManager *objFileManager=[NSFileManager defaultManager];
+    strDBDirectoryPath=[NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/HouseJinni.sqlite"];
+    NSLog(@"directory path :: %@",strDBDirectoryPath);
+    if (![objFileManager fileExistsAtPath:strDBDirectoryPath]) {
+        NSError *err;
+        [objFileManager copyItemAtPath:strDBBundlePath toPath:strDBDirectoryPath error:&err];
+    }
+
+}
+
+-(void)databaseConfiguration
+{
+
+    objApp.objDatabse=[[FMDatabase alloc]initWithPath:strDBDirectoryPath];
+        [objApp.objDatabse open];
+
+} */
+-(void)insertDataToDatabse
+{
+    NSString *strInsertQuery=[NSString stringWithFormat:@"insert into customer (username,firstname,lastname,emailid,password) values('%@','%@','%@','%@','%@')",[userDetailsDictionary valueForKey:@"UserName"],[userDetailsDictionary valueForKey:@"FirstName"],[userDetailsDictionary valueForKey:@"LastName"],[userDetailsDictionary valueForKey:@"EmailId"],[userDetailsDictionary valueForKey:@"Password"]];
+    NSLog(@"%@",strInsertQuery);
+ 
+    BOOL success=  [appDelegateObject.dataBaseObject executeUpdate:strInsertQuery];
+    NSLog(@"success=%d %@",success,[appDelegateObject.dataBaseObject lastErrorMessage]);
+
+   [self FetchDataFromDatabase];
+}
+-(void)FetchDataFromDatabase
+{
+    FMResultSet *resultSet= [appDelegateObject.dataBaseObject executeQuery:@"select * from customer"];
+    while ([resultSet next])
+    {
+        NSLog(@"%@",resultSet.resultDictionary);
+    }
+
+}
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
 @interface SignUpViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate>
 {
@@ -19,6 +20,10 @@
     
     NSMutableArray *userSignUpDetailsArray; //user array
     NSMutableArray *registrationArray;      //registration form
+    //Objects For Database
+    NSString *strDBBundlePath;
+    NSString *strDBDirectoryPath;
+    AppDelegate *appDelegateObject;
 }
 
 @property(nonatomic,strong)NSMutableDictionary *registerDictionary; // user details

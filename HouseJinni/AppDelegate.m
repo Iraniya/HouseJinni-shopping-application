@@ -11,7 +11,10 @@
 #import "SignUpViewController.h"
 
 @interface AppDelegate ()
+{
+    AppDelegate *appDelegateObject;
 
+}
 @end
 
 @implementation AppDelegate
@@ -19,20 +22,21 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    appDelegateObject = [[UIApplication sharedApplication]delegate];
     
+    //configataion database
+    [self dataBaseConfiguration];
+    
+    //Creating window for app
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    
     ViewController *viewControllerObject = [[ViewController alloc]initWithNibName:@"ViewController" bundle:nil];
-    
-    
     UINavigationController *navigationObject = [[UINavigationController alloc]initWithRootViewController:viewControllerObject];
-    
     self.window.rootViewController = navigationObject;
-    
     [self.window makeKeyAndVisible];
     
     //init
     [self InitBeforeAppStart];
+    
     return YES;
 }
 
@@ -56,6 +60,9 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+   
+    //---closing dataBase---
+    [appDelegateObject.dataBaseObject close];
 }
 
 #pragma mark - Init for App
@@ -67,4 +74,30 @@
     [userDefaults setBool:isMainAdmin forKey:@"isMainAdmin"];
     [userDefaults synchronize];
 }
+
+#pragma mark - DataBase Setup Path -
+
+-(void)dataBaseConfiguration
+{
+    //---copyDatabaseFileFromBundleToDirectoryByFileManager----
+    NSFileManager *fileManagerObject=[NSFileManager defaultManager];
+    NSString *strDBDirectoryPath=[NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/HouseJinni.sqlite"];
+    NSLog(@"directory path :: %@",strDBDirectoryPath);
+    
+    if (![fileManagerObject fileExistsAtPath:strDBDirectoryPath])
+    {
+        NSError *error;
+        NSString  *strDBBundlePath=[[NSBundle mainBundle]pathForResource:@"HouseJinni" ofType:@"sqlite"];
+        
+        NSLog(@"bundlePath:: %@",strDBBundlePath);
+        [fileManagerObject copyItemAtPath:strDBBundlePath toPath:strDBDirectoryPath error:&error];
+    }
+    
+    //--Initialize & open Database object with directory path---
+    appDelegateObject.dataBaseObject=[[FMDatabase alloc]initWithPath:strDBDirectoryPath];
+    //--Opening DataBase---
+    [appDelegateObject.dataBaseObject open];
+}
+
+
 @end

@@ -86,7 +86,7 @@
         }
     
         return pickerCustomCell;
-   /* }
+    }
     if (indexPath.row==1) {
         addCatagoryTextFieldTableViewCell *textFieldCell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
         if (textFieldCell==nil) {

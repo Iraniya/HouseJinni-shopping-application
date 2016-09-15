@@ -25,7 +25,7 @@
             <connections>
                 <outlet property="textField" destination="BLh-CI-UH9" id="Otu-io-YmA"/>
             </connections>
-            <point key="canvasLocation" x="241" y="168"/>
+            <point key="canvasLocation" x="256" y="184"/>
         </tableViewCell>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

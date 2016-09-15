@@ -29,7 +29,7 @@
 -(void)NavigationMethods
 {
     self.navigationController.navigationBarHidden = false;
-    self.navigationItem.title = @"Add Category";
+    self.navigationItem.title = @"Add Main Category";
     
     UIBarButtonItem *cancelBtn = [[UIBarButtonItem alloc]initWithTitle:@"Cancel" style:UIBarButtonItemStylePlain target:self action:@selector(cancelBtnPressed:)];
     UIBarButtonItem *doneBtn = [[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStylePlain target:self action:@selector(doneBtnPressed:)];

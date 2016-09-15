@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface PickerCustomTableViewCell : UITableViewCell<UIPickerViewDataSource,UIPickerViewDelegate>
-{
-    
-}
+
 @property (nonatomic,strong)IBOutlet UIPickerView *pickerViewObject;
 @end

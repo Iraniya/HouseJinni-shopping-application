@@ -11,5 +11,8 @@
 @interface addSubCategoryViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 {
     IBOutlet UITableView *tableViewObject;
+    
+    //to count number of rows
+    NSInteger numberOfRows;
 }
 @end

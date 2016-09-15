@@ -11,16 +11,19 @@
 @interface ViewController : UIViewController<UITextFieldDelegate>
 {
     
-    BOOL isMainAdmin ; //to check for authentication of main admin
+    
+    BOOL isMainAdmin ;
     
     //IBoutlet
     IBOutlet UIScrollView *scrollViewObject;   //scroll view
     IBOutlet UIView *mainAdminView;             //main admin view
+    
     IBOutlet UITextField *emailIdTextField;     //TextField
     IBOutlet UITextField *passwordTextField;
+    
     IBOutlet UIButton *mainAdminButton;
     
-    //main Admin view
+    //main Admin
     IBOutlet UITextField *mainAdminEmailIdTextField; //mainadmin textfield
     IBOutlet UITextField *mainAdminPasswordTextField;
 }

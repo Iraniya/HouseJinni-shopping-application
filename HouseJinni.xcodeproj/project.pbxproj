@@ -14,14 +14,6 @@
 		2116067A1D76ACDF00860E2A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 211606781D76ACDF00860E2A /* LaunchScreen.xib */; };
 		211606861D76ACE000860E2A /* HouseJinniTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 211606851D76ACE000860E2A /* HouseJinniTests.m */; };
 		211606901D76AD8F00860E2A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2116068F1D76AD8F00860E2A /* ViewController.xib */; };
-		4F719DE11D88197D007C49CB /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F719DD61D88197D007C49CB /* FMDatabase.m */; };
-		4F719DE21D88197D007C49CB /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F719DD81D88197D007C49CB /* FMDatabaseAdditions.m */; };
-		4F719DE31D88197D007C49CB /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F719DDA1D88197D007C49CB /* FMDatabasePool.m */; };
-		4F719DE41D88197D007C49CB /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F719DDC1D88197D007C49CB /* FMDatabaseQueue.m */; };
-		4F719DE51D88197D007C49CB /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F719DDF1D88197D007C49CB /* FMResultSet.m */; };
-		4F719DE61D88197D007C49CB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F719DE01D88197D007C49CB /* Info.plist */; };
-		4F719DE91D881D19007C49CB /* HouseJinni.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 4F719DE81D881D19007C49CB /* HouseJinni.sqlite */; };
-		5EE14B561D8906CD00872A6E /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE14B551D8906CD00872A6E /* libsqlite3.0.tbd */; };
 		6F2E14751D7FE37B0020AA94 /* UIFont+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2E14741D7FE37B0020AA94 /* UIFont+Utility.m */; };
 		6F7CBBC01D8138DA00F2F541 /* SignUpButtonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7CBBBE1D8138DA00F2F541 /* SignUpButtonTableViewCell.m */; };
 		6F7CBBC11D8138DA00F2F541 /* SignUpButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F7CBBBF1D8138DA00F2F541 /* SignUpButtonTableViewCell.xib */; };
@@ -33,6 +25,8 @@
 		ABB9BB611D87FFD700E84492 /* AddButton.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB9BB601D87FFD700E84492 /* AddButton.png */; };
 		ABB9BB651D88072900E84492 /* AddMainCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB9BB631D88072900E84492 /* AddMainCategoryViewController.m */; };
 		ABB9BB661D88072900E84492 /* AddMainCategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABB9BB641D88072900E84492 /* AddMainCategoryViewController.xib */; };
+		ABB9BB6B1D880EF500E84492 /* addCatagoryTextFieldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB9BB691D880EF500E84492 /* addCatagoryTextFieldTableViewCell.m */; };
+		ABB9BB6C1D880EF500E84492 /* addCatagoryTextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABB9BB6A1D880EF500E84492 /* addCatagoryTextFieldTableViewCell.xib */; };
 		D052A8741D780F44004C8306 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D052A8731D780F44004C8306 /* Default-568h@2x.png */; };
 		D052A8781D7812BF004C8306 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D052A8761D7812BF004C8306 /* HomeViewController.m */; };
 		D052A8791D7812BF004C8306 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D052A8771D7812BF004C8306 /* HomeViewController.xib */; };
@@ -66,20 +60,6 @@
 		211606841D76ACE000860E2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		211606851D76ACE000860E2A /* HouseJinniTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HouseJinniTests.m; sourceTree = "<group>"; };
 		2116068F1D76AD8F00860E2A /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
-		4F719DD51D88197D007C49CB /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
-		4F719DD61D88197D007C49CB /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
-		4F719DD71D88197D007C49CB /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		4F719DD81D88197D007C49CB /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		4F719DD91D88197D007C49CB /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
-		4F719DDA1D88197D007C49CB /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
-		4F719DDB1D88197D007C49CB /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
-		4F719DDC1D88197D007C49CB /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
-		4F719DDD1D88197D007C49CB /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
-		4F719DDE1D88197D007C49CB /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
-		4F719DDF1D88197D007C49CB /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
-		4F719DE01D88197D007C49CB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4F719DE81D881D19007C49CB /* HouseJinni.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = HouseJinni.sqlite; sourceTree = "<group>"; };
-		5EE14B551D8906CD00872A6E /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		6F2E14731D7FE37B0020AA94 /* UIFont+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Utility.h"; sourceTree = "<group>"; };
 		6F2E14741D7FE37B0020AA94 /* UIFont+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Utility.m"; sourceTree = "<group>"; };
 		6F2E14781D7FED400020AA94 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -97,6 +77,9 @@
 		ABB9BB621D88072900E84492 /* AddMainCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMainCategoryViewController.h; sourceTree = "<group>"; };
 		ABB9BB631D88072900E84492 /* AddMainCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMainCategoryViewController.m; sourceTree = "<group>"; };
 		ABB9BB641D88072900E84492 /* AddMainCategoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddMainCategoryViewController.xib; sourceTree = "<group>"; };
+		ABB9BB681D880EF500E84492 /* addCatagoryTextFieldTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addCatagoryTextFieldTableViewCell.h; sourceTree = "<group>"; };
+		ABB9BB691D880EF500E84492 /* addCatagoryTextFieldTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addCatagoryTextFieldTableViewCell.m; sourceTree = "<group>"; };
+		ABB9BB6A1D880EF500E84492 /* addCatagoryTextFieldTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = addCatagoryTextFieldTableViewCell.xib; sourceTree = "<group>"; };
 		D052A8731D780F44004C8306 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D052A8751D7812BF004C8306 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		D052A8761D7812BF004C8306 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
@@ -114,7 +97,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EE14B561D8906CD00872A6E /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,14 +113,12 @@
 		2116065D1D76ACDE00860E2A = {
 			isa = PBXGroup;
 			children = (
-				5EE14B551D8906CD00872A6E /* libsqlite3.0.tbd */,
-				4F719DE71D881983007C49CB /* database */,
+				D052A8731D780F44004C8306 /* Default-568h@2x.png */,
 				ABB9BB5F1D87FFD700E84492 /* images */,
 				6FFA31FB1D7E8F1F0037EAF1 /* UserDataModel */,
 				211606681D76ACDF00860E2A /* HouseJinni */,
 				211606821D76ACDF00860E2A /* HouseJinniTests */,
 				211606671D76ACDF00860E2A /* Products */,
-				D052A8731D780F44004C8306 /* Default-568h@2x.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -192,34 +172,6 @@
 				211606841D76ACE000860E2A /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		4F719DD41D88197D007C49CB /* fmdb */ = {
-			isa = PBXGroup;
-			children = (
-				4F719DD51D88197D007C49CB /* FMDatabase.h */,
-				4F719DD61D88197D007C49CB /* FMDatabase.m */,
-				4F719DD71D88197D007C49CB /* FMDatabaseAdditions.h */,
-				4F719DD81D88197D007C49CB /* FMDatabaseAdditions.m */,
-				4F719DD91D88197D007C49CB /* FMDatabasePool.h */,
-				4F719DDA1D88197D007C49CB /* FMDatabasePool.m */,
-				4F719DDB1D88197D007C49CB /* FMDatabaseQueue.h */,
-				4F719DDC1D88197D007C49CB /* FMDatabaseQueue.m */,
-				4F719DDD1D88197D007C49CB /* FMDB.h */,
-				4F719DDE1D88197D007C49CB /* FMResultSet.h */,
-				4F719DDF1D88197D007C49CB /* FMResultSet.m */,
-				4F719DE01D88197D007C49CB /* Info.plist */,
-			);
-			path = fmdb;
-			sourceTree = "<group>";
-		};
-		4F719DE71D881983007C49CB /* database */ = {
-			isa = PBXGroup;
-			children = (
-				4F719DE81D881D19007C49CB /* HouseJinni.sqlite */,
-				4F719DD41D88197D007C49CB /* fmdb */,
-			);
-			name = database;
 			sourceTree = "<group>";
 		};
 		6F2E14761D7FE3810020AA94 /* Catagory */ = {
@@ -278,8 +230,19 @@
 				ABB9BB621D88072900E84492 /* AddMainCategoryViewController.h */,
 				ABB9BB631D88072900E84492 /* AddMainCategoryViewController.m */,
 				ABB9BB641D88072900E84492 /* AddMainCategoryViewController.xib */,
+				ABB9BB6D1D880EFA00E84492 /* TextField */,
 			);
 			name = "Add MainCategory";
+			sourceTree = "<group>";
+		};
+		ABB9BB6D1D880EFA00E84492 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				ABB9BB681D880EF500E84492 /* addCatagoryTextFieldTableViewCell.h */,
+				ABB9BB691D880EF500E84492 /* addCatagoryTextFieldTableViewCell.m */,
+				ABB9BB6A1D880EF500E84492 /* addCatagoryTextFieldTableViewCell.xib */,
+			);
+			name = TextField;
 			sourceTree = "<group>";
 		};
 		D01507341D780443005D0BA0 /* TextFieldCell */ = {
@@ -407,11 +370,10 @@
 				D0688AC21D78041A00FF9A05 /* SignUpTableViewCell.xib in Resources */,
 				ABB9BB611D87FFD700E84492 /* AddButton.png in Resources */,
 				6F7CBBC61D8139EE00F2F541 /* checked_checkbox.png in Resources */,
+				ABB9BB6C1D880EF500E84492 /* addCatagoryTextFieldTableViewCell.xib in Resources */,
 				2116067A1D76ACDF00860E2A /* LaunchScreen.xib in Resources */,
 				211606901D76AD8F00860E2A /* ViewController.xib in Resources */,
 				6F7CBBC11D8138DA00F2F541 /* SignUpButtonTableViewCell.xib in Resources */,
-				4F719DE91D881D19007C49CB /* HouseJinni.sqlite in Resources */,
-				4F719DE61D88197D007C49CB /* Info.plist in Resources */,
 				ABB9BB5D1D87F25200E84492 /* InventoryViewController.xib in Resources */,
 				6F7CBBC41D8139D600F2F541 /* unchecked_checkbox.png in Resources */,
 				D0688ABD1D7802AE00FF9A05 /* SignUpViewController.xib in Resources */,
@@ -439,17 +401,13 @@
 				D0688AC11D78041A00FF9A05 /* SignUpTableViewCell.m in Sources */,
 				6FFA31FA1D7E8F1B0037EAF1 /* UserDataModel.m in Sources */,
 				211606721D76ACDF00860E2A /* ViewController.m in Sources */,
-				4F719DE11D88197D007C49CB /* FMDatabase.m in Sources */,
 				2116066F1D76ACDF00860E2A /* AppDelegate.m in Sources */,
-				4F719DE41D88197D007C49CB /* FMDatabaseQueue.m in Sources */,
-				4F719DE51D88197D007C49CB /* FMResultSet.m in Sources */,
 				D0688ABC1D7802AE00FF9A05 /* SignUpViewController.m in Sources */,
+				ABB9BB6B1D880EF500E84492 /* addCatagoryTextFieldTableViewCell.m in Sources */,
 				2116066C1D76ACDF00860E2A /* main.m in Sources */,
 				D052A8781D7812BF004C8306 /* HomeViewController.m in Sources */,
-				4F719DE21D88197D007C49CB /* FMDatabaseAdditions.m in Sources */,
 				6F7CBBC01D8138DA00F2F541 /* SignUpButtonTableViewCell.m in Sources */,
 				6F2E14751D7FE37B0020AA94 /* UIFont+Utility.m in Sources */,
-				4F719DE31D88197D007C49CB /* FMDatabasePool.m in Sources */,
 				ABB9BB5C1D87F25200E84492 /* InventoryViewController.m in Sources */,
 				ABB9BB651D88072900E84492 /* AddMainCategoryViewController.m in Sources */,
 			);

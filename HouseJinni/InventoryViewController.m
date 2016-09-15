@@ -8,6 +8,7 @@
 
 #import "InventoryViewController.h"
 #import "AddMainCategoryViewController.h"
+#import "SubCategoryViewController.h"
 
 @interface InventoryViewController ()
 
@@ -34,7 +35,7 @@
 -(void)NavigationMethods
 {
     self.navigationController.navigationBarHidden =false;
-    self.navigationItem.title = @"Main Catogory";
+    self.navigationItem.title = @"Main Category";
     UIBarButtonItem *cancelBtn = [[UIBarButtonItem alloc]initWithTitle:@"Cancel" style:UIBarButtonItemStylePlain target:self action:@selector(cancelBtnPressed:)];
     //UIBarButtonItem *addBtn = [[UIBarButtonItem alloc]initWithTitle:@"add" style:UIBarButtonItemStylePlain target:self action:@selector(addBtnPressed:)];
     UIImage *addImage = [UIImage imageNamed:@"AddButton.png"];
@@ -63,11 +64,15 @@
 //--------navigation Methods ends here--------
 
 #pragma mark - TableView methods
+
+//=============== Table View Methods starts here ================//
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return mainCategory.count;
 }
 
+//cell
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
@@ -79,4 +84,13 @@
     return cell;
     
 }
+//when user select any main category
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    SubCategoryViewController *subCategoryObject = [[SubCategoryViewController alloc]initWithNibName:@"SubCategoryViewController" bundle:nil];
+    [self.navigationController pushViewController:subCategoryObject animated:YES];
+    NSLog(@"%@",indexPath);
+}
+
+//------------Table View methods ends here ----------
 @end

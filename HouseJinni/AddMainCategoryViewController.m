@@ -8,6 +8,7 @@
 
 #import "AddMainCategoryViewController.h"
 #import "addCatagoryTextFieldTableViewCell.h"
+#import "SubCategoryViewController.h"
 
 @interface AddMainCategoryViewController ()
 
@@ -60,4 +61,6 @@
         }
         return textFieldCell;
 }
+
+
 @end

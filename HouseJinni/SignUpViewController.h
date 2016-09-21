@@ -11,7 +11,7 @@
 @interface SignUpViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate>
 {
     
-    BOOL isMainAdmin;
+    BOOL isMainAdmin; //authenticating admin
     
     IBOutlet UITableView *signUpTableView;  //table view
     

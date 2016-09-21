@@ -13,13 +13,14 @@
 #import "UIFont+Utility.h"
 
 @interface SignUpViewController ()
-
 @end
-
 @implementation SignUpViewController
+#pragma mark - object Creation
 {
+    //Custom button cell object
     SignUpButtonTableViewCell *buttonCell;
 }
+
 #pragma mark - Init
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,6 +31,7 @@
     return self;
 }
 
+#pragma mark - view Methods
 -(void)viewDidLoad
 {
     [super viewDidLoad];
@@ -37,16 +39,20 @@
     
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     isMainAdmin = [userDefaults boolForKey:@"isMainAdmin"];
+    
     //registration array to create signup form
     registrationArray = [self createArray];
     
     //all user details sotres in userDetails Dictionary
     userDetailsDictionary = [[NSMutableDictionary alloc]init];
-    NSLog(@"%@",userDetailsDictionary);
+    
+    //here call funtion to fetch data from database
+    //pending to be update by shilpriya
+    [self fetchAllUserDetailsFromDataBase];
     [self navigationMethods];
 }
 
-
+//=============== Navigation Methods starts here ==============
 #pragma mark - Navigation
 -(void)navigationMethods
 {
@@ -69,7 +75,7 @@
     //pending
    NSLog(@"user details %@",userDetailsDictionary);
 }
-
+//---------------- Navigation methods ends here ------------------
 
 #pragma mark CreatArray
 -(NSMutableArray*)createArray
@@ -132,8 +138,8 @@
     return signUpRegisterArray;
 }
 
+//=============== Table View Methods starts here ===========
 #pragma mark - table View Methods
-
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return registrationArray.count;
@@ -197,12 +203,12 @@
     }
     return 0;
 }
+//-----------------  Table View Methods ends here ----------
 
 
-#pragma mark - textfield methods
 //=========textfield methods start here=============///
-
-//text field return
+#pragma mark - textfield methods
+//textfield return
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];
@@ -267,8 +273,8 @@
 }
 /////------------- TextField methods ends here -----------/////
 
+#pragma mark - CheckBox methods
 //Check box state change
-
 -(void)setButtonState
 {
     [buttonCell.checkBoxButton setImage:[UIImage imageNamed:@"unchecked_checkbox"] forState:UIControlStateNormal];
@@ -283,4 +289,20 @@
     
     buttonCell.checkBoxButton.selected = !buttonCell.checkBoxButton.selected;
 }
+
+
+/////=============  DateBase methods starts here ==========//////
+#pragma mark - DataBase Methods
+
+-(void)fetchAllUserDetailsFromDataBase
+{
+    //databse methods should be implimented here
+}
+
+-(void)updateAllUserDetailsToDataBase
+{
+    //current user deatils  are in userDetailsDictionary
+    //store the current user deatails in database and update the database
+}
+//////------------- DataBase methods ends here --------------/////
 @end

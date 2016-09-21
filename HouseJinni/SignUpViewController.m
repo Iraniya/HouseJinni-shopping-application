@@ -184,16 +184,15 @@
         }
         
         if([[[registrationArray objectAtIndex:indexPath.row]objectForKey:@"RadioButton"] isEqualToString:@"UserTypeSubAdmin"]){
+            buttonCell.checkBoxButton.tag= tagCount;
             buttonCell.checkBoxTitleLabel.text =@"Sub Admin";
-            [buttonCell.checkBoxButton setImage:[UIImage imageNamed:@"unchecked_checkbox"] forState:UIControlStateNormal];
-            NSIndexPath *previousIndexPath = [NSIndexPath indexPathForRow:indexPath.row-1 inSection:indexPath.section];
-            NSLog(@"what %@",previousIndexPath);
-            [tableView cellForRowAtIndexPath:previousIndexPath] ;
-            [self changeButtonState:previousIndexPath];
+            [self setButtonState];
             return buttonCell;
             
         }
-        [buttonCell.checkBoxButton setImage:[UIImage imageNamed:@"checked_checkbox"] forState:UIControlStateNormal];
+        buttonCell.checkBoxButton.tag = tagCount;
+        buttonCell.checkBoxTitleLabel.text =@"Customer";
+        [self setButtonState];
         return buttonCell;
     }
     return 0;
@@ -268,10 +267,20 @@
 }
 /////------------- TextField methods ends here -----------/////
 
--(void)changeButtonState:(NSIndexPath*)currentIndext
+//Check box state change
+
+-(void)setButtonState
 {
+    [buttonCell.checkBoxButton setImage:[UIImage imageNamed:@"unchecked_checkbox"] forState:UIControlStateNormal];
+    [buttonCell.checkBoxButton setImage:[UIImage imageNamed:@"checked_checkbox"] forState:UIControlStateSelected];
     
-    [buttonCell.checkBoxButton setImage:[UIImage imageNamed:@"checked_checkbox"] forState:UIControlStateNormal];
+    [buttonCell.checkBoxButton addTarget:self action:@selector(myCheckboxToggle:)forControlEvents:UIControlEventTouchUpInside];
+    [buttonCell.checkBoxButton setShowsTouchWhenHighlighted:YES];
 }
 
+- (void)myCheckboxToggle:(id)sender
+{
+    
+    buttonCell.checkBoxButton.selected = !buttonCell.checkBoxButton.selected;
+}
 @end

@@ -30,10 +30,10 @@
                 </subviews>
             </tableViewCellContentView>
             <connections>
-                <outlet property="button" destination="R15-sE-lxt" id="BIh-4s-g5j"/>
-                <outlet property="lable" destination="49g-SM-cGn" id="1pL-Fo-vif"/>
+                <outlet property="checkBoxButton" destination="R15-sE-lxt" id="3Qa-qe-67A"/>
+                <outlet property="checkBoxTitleLabel" destination="49g-SM-cGn" id="OLu-mm-hNr"/>
             </connections>
-            <point key="canvasLocation" x="349" y="161"/>
+            <point key="canvasLocation" x="289" y="190"/>
         </tableViewCell>
     </objects>
     <resources>

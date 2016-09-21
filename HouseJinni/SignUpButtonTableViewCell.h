@@ -10,10 +10,6 @@
 
 @interface SignUpButtonTableViewCell : UITableViewCell
 
-@property(nonatomic, retain) IBOutlet UIButton *button;
-@property(nonatomic, retain) IBOutlet UILabel *lable;
-
-@property(nonatomic, strong) IBOutlet UIButton *programaticButton;
-@property(nonatomic, strong) IBOutlet UIButton *programaticButton1;
-
+@property(nonatomic, strong) IBOutlet UIButton *checkBoxButton;
+@property(nonatomic, strong) IBOutlet UILabel *checkBoxTitleLabel;
 @end

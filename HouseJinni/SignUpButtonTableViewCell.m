@@ -10,7 +10,8 @@
 
 
 @implementation SignUpButtonTableViewCell
-@synthesize button;
+@synthesize checkBoxButton;
+
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
@@ -18,8 +19,15 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
+    
+}
 
-    // Configure the view for the selected state
+// when you setup your button, set an image for the selected and normal states
+
+
+- (void)myCheckboxToggle:(id)sender
+{
+    checkBoxButton.selected = !checkBoxButton.selected; // toggle the selected property, just a simple BOOL
 }
 
 @end

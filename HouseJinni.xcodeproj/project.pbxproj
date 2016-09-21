@@ -290,8 +290,8 @@
 			isa = PBXGroup;
 			children = (
 				6F7CBBC31D8139D600F2F541 /* unchecked_checkbox.png */,
-				ABB9BB601D87FFD700E84492 /* AddButton.png */,
 				6F7CBBC51D8139EE00F2F541 /* checked_checkbox.png */,
+				ABB9BB601D87FFD700E84492 /* AddButton.png */,
 			);
 			path = images;
 			sourceTree = "<group>";

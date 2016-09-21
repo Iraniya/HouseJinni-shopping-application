@@ -17,7 +17,9 @@
 @end
 
 @implementation SignUpViewController
-
+{
+    SignUpButtonTableViewCell *buttonCell;
+}
 #pragma mark - Init
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -148,8 +150,12 @@
     }
     return 0;
 }
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    int tagCount = (int)indexPath.row+1 ;
+    
+    
     //if cell is textfield
     if([[registrationArray objectAtIndex:indexPath.row] objectForKey:@"TextField"]){
        SignUpTableViewCell *textFieldCell=[tableView dequeueReusableCellWithIdentifier:@"TextFieldCell"];
@@ -159,24 +165,35 @@
         }
     
         textFieldCell.customTextField.delegate=self;
-        textFieldCell.customTextField.tag = indexPath.row+1;
+        textFieldCell.customTextField.tag = tagCount;
         //cell.backgroundColor = [UIColor grayColor];
         textFieldCell.customTextField.textAlignment = NSTextAlignmentCenter;
         textFieldCell.customTextField.placeholder = [[registrationArray objectAtIndex:indexPath.row] objectForKey:@"TextField"];
         textFieldCell.customTextField.font = [UIFont getDefaultTextFieldFont];
+        
         return textFieldCell;
     }
+    
     else if ([[registrationArray objectAtIndex:indexPath.row] objectForKey:@"RadioButton"]){
-        SignUpButtonTableViewCell *buttonCell =[tableView dequeueReusableCellWithIdentifier:@"ButtonCell"];
+        
+        buttonCell =[tableView dequeueReusableCellWithIdentifier:@"ButtonCell"];
+        
         if(buttonCell==nil){
             NSArray *aryNib = [[NSBundle mainBundle]loadNibNamed:@"SignUpButtonTableViewCell" owner:self options:nil];
             buttonCell =(SignUpButtonTableViewCell*)[aryNib firstObject];
         }
+        
         if([[[registrationArray objectAtIndex:indexPath.row]objectForKey:@"RadioButton"] isEqualToString:@"UserTypeSubAdmin"]){
-            buttonCell.lable.text =@"Sub Admin";
+            buttonCell.checkBoxTitleLabel.text =@"Sub Admin";
+            [buttonCell.checkBoxButton setImage:[UIImage imageNamed:@"unchecked_checkbox"] forState:UIControlStateNormal];
+            NSIndexPath *previousIndexPath = [NSIndexPath indexPathForRow:indexPath.row-1 inSection:indexPath.section];
+            NSLog(@"what %@",previousIndexPath);
+            [tableView cellForRowAtIndexPath:previousIndexPath] ;
+            [self changeButtonState:previousIndexPath];
             return buttonCell;
             
         }
+        [buttonCell.checkBoxButton setImage:[UIImage imageNamed:@"checked_checkbox"] forState:UIControlStateNormal];
         return buttonCell;
     }
     return 0;
@@ -251,5 +268,10 @@
 }
 /////------------- TextField methods ends here -----------/////
 
+-(void)changeButtonState:(NSIndexPath*)currentIndext
+{
+    
+    [buttonCell.checkBoxButton setImage:[UIImage imageNamed:@"checked_checkbox"] forState:UIControlStateNormal];
+}
 
 @end

@@ -24,14 +24,16 @@
 #pragma mark - Init
 -(void)viewDidLoad
 {
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    isMainAdmin = [userDefaults boolForKey:@"isMainAdmin"];
+    [super viewDidLoad];
+    
+    isMainAdmin = [[self funtionToGetUserDefaultData] boolForKey:@"isMainAdmin"];
+    
+    NSLog(@"%d",isMainAdmin);
     if (isMainAdmin == true) {
         mainAdminButton.hidden =true;
     }
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    //textField Related things Eg. placeholder
+    
+    //create textField and add property
     [self CreateTextField];
     mainAdminView.hidden = true;
     
@@ -46,21 +48,55 @@
     self.navigationController.navigationBarHidden =true;
 }
 
-#pragma mark -TextField Methods
+#pragma mark -TextField init Methods
 -(void)CreateTextField
 {
+    /*
+    //create TextFiled programmetically
+    NSArray *loginForm = [[NSArray alloc]initWithObjects:@"emailId",@"password", nil];
+    
+    for (int i =0 ; i<2; i++) {
+        
+        //creating string for nameing textfield
+        NSString *textFieldName = [NSString stringWithFormat:@"%@TextField",[loginForm objectAtIndex:i]];
+        
+        CGRect frame = CGRectMake(70, 96, 182, 30);
+        UITextField *textfield = [[UITextField alloc]initWithFrame:frame];
+        
+    }
+    
+    
+    
+    ///CGRect frame = CGRectMake(70, 96, 182, 30);
+    emailIdTextField.frame = frame;
+    
+    //emailIdTextField.textAlignment = UITextAlignmentCenter;
+    */
     emailIdTextField.font = [UIFont getDefaultTextFieldFont] ;
     emailIdTextField.placeholder = @"Email Id";
     passwordTextField.placeholder = @"Password";
-    
     //tag
     emailIdTextField.tag = 1;
     passwordTextField.tag = 2;
     
+    mainAdminEmailIdTextField.tag = 11;
+    mainAdminPasswordTextField.tag= 22;
     //PlaceHolder
     mainAdminEmailIdTextField.placeholder =@"Email Id";
     mainAdminPasswordTextField.placeholder = @"Password";
-    
+    //delegate
+    emailIdTextField.delegate = self;
+    passwordTextField.delegate =self;
+    mainAdminEmailIdTextField.delegate =self;
+    mainAdminPasswordTextField.delegate=self;
+}
+
+#pragma mark - TextField Delegate
+-(void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    //function to scroll
+    [self functionToScrollTextField:textField];
+   
 }
 
 
@@ -125,9 +161,10 @@
     if ([mainEmailId isEqualToString:@"admin@gmail.com"]) {
         if ([mainPassword isEqualToString:@"123"]) {
             isMainAdmin = true;
-            NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-            [userDefaults setBool:YES forKey:@"isMainAdmin"];
-            [userDefaults synchronize];
+            
+            NSUserDefaults *houseJinniUserDefaults = [NSUserDefaults standardUserDefaults];
+            [houseJinniUserDefaults setBool:YES forKey:@"isMainAdmin"];
+            [houseJinniUserDefaults synchronize];
             mainAdminView.hidden = true;
             
             [self viewDidLoad];
@@ -151,13 +188,28 @@
     //scrollViewObject.keyboardDismissMode = UIScrollViewKeyboardDismissModeInteractive;    
 }
 
-#pragma mark - TextField Delegate
--(void)textFieldDidBeginEditing:(UITextField *)textField
+#pragma mark - functions
+
+-(void)functionToScrollTextField:(UITextField*)textField
 {
-    if ([textField.placeholder isEqualToString:@"Password"]) {
-        if (textField.tag>0){
-            [scrollViewObject scrollRectToVisible:CGRectMake(textField.frame.origin.x, textField.frame.origin.y+310, textField.frame.size.width, textField.frame.size.height) animated:YES];
-        }
+    if (textField.tag>0){
+        [scrollViewObject scrollRectToVisible:CGRectMake(textField.frame.origin.x, textField.frame.origin.y+380, textField.frame.size.width, textField.frame.size.height) animated:YES];
     }
+
 }
+
+-(NSUserDefaults*)funtionToGetUserDefaultData
+{
+    NSUserDefaults *houseJinniUserDefaults = [NSUserDefaults standardUserDefaults];
+    return houseJinniUserDefaults;
+}
+
+/*
+-(void)funtionToSetUserDefaultValues
+{
+    NSUserDefaults *houseJinniUserDefaults = [NSUserDefaults standardUserDefaults];
+    [houseJinniUserDefaults setBool:YES forKey:@"isMainAdmin"];
+    [houseJinniUserDefaults synchronize];
+}
+ */
 @end

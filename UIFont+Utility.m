@@ -33,8 +33,10 @@
 {
     return [UIFont systemFontOfSize:AppTextFieldFontSize];
 }
+
 +(UIFont*)getFontForLable:(CGFloat)size
 {
     return [UIFont systemFontOfSize:AppTextFieldFontSize ];
 }
+
 @end

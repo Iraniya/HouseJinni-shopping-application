@@ -10,8 +10,6 @@
 
 @interface ViewController : UIViewController<UITextFieldDelegate>
 {
-    
-    
     BOOL isMainAdmin ;
     
     //IBoutlet
@@ -31,6 +29,5 @@
 - (IBAction)mainAdminBtn:(id)sender;
 - (IBAction)signInBtn:(id)sender;
 - (IBAction)signUpbtn:(id)sender;
-
 @end
 

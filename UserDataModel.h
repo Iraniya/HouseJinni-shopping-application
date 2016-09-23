@@ -26,6 +26,7 @@ typedef enum UserType:NSInteger
 @property (nonatomic,strong) NSString *lastName;
 @property (nonatomic,strong) NSString *emailId;
 @property (nonatomic,strong) NSString *password;
+@property (nonatomic) NSInteger mobileNumber;
 
 -(id)initWithData:(NSMutableDictionary*)userDictionary;
 @end

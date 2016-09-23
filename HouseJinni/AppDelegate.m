@@ -18,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //if Application is open through notification jump to appropriate page
+    //code pending //upadte after push and local notification 
+    
+    
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
@@ -32,7 +36,10 @@
     [self.window makeKeyAndVisible];
     
     //init
-    [self InitBeforeAppStart];
+    [self InitBeforeAppStarts];
+    
+    
+    
     return YES;
 }
 
@@ -59,12 +66,17 @@
 }
 
 #pragma mark - Init for App
--(void)InitBeforeAppStart
+-(void)InitBeforeAppStarts
 {
     
     BOOL isMainAdmin = NO;
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    [userDefaults setBool:isMainAdmin forKey:@"isMainAdmin"];
-    [userDefaults synchronize];
+    NSUserDefaults *houseJinniAppUserDefaults = [NSUserDefaults standardUserDefaults];
+    [houseJinniAppUserDefaults setBool:isMainAdmin forKey:@"isMainAdmin"];
+    isMainAdmin = [houseJinniAppUserDefaults boolForKey:@"isMainAdmin"];
+    [houseJinniAppUserDefaults synchronize];
+    
+    
+    //for autologin and remember password for customer only
+    
 }
 @end

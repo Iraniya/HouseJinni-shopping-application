@@ -20,6 +20,7 @@
 		6F7CBBC41D8139D600F2F541 /* unchecked_checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F7CBBC31D8139D600F2F541 /* unchecked_checkbox.png */; };
 		6F7CBBC61D8139EE00F2F541 /* checked_checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F7CBBC51D8139EE00F2F541 /* checked_checkbox.png */; };
 		6FFA31FA1D7E8F1B0037EAF1 /* UserDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFA31F91D7E8F1B0037EAF1 /* UserDataModel.m */; };
+		AB650BBE1D93CF1A0086FC86 /* UITextField+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = AB650BBD1D93CF1A0086FC86 /* UITextField+Utility.m */; };
 		AB8CCA921D8A87D700793CFD /* SubCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8CCA901D8A87D700793CFD /* SubCategoryViewController.m */; };
 		AB8CCA931D8A87D700793CFD /* SubCategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8CCA911D8A87D700793CFD /* SubCategoryViewController.xib */; };
 		AB8CCA981D8A898F00793CFD /* PickerCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8CCA961D8A898F00793CFD /* PickerCustomTableViewCell.m */; };
@@ -78,6 +79,8 @@
 		6F7CBBC51D8139EE00F2F541 /* checked_checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checked_checkbox.png; path = ../checked_checkbox.png; sourceTree = "<group>"; };
 		6FFA31F81D7E8F1B0037EAF1 /* UserDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDataModel.h; sourceTree = "<group>"; };
 		6FFA31F91D7E8F1B0037EAF1 /* UserDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDataModel.m; sourceTree = "<group>"; };
+		AB650BBC1D93CF1A0086FC86 /* UITextField+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Utility.h"; sourceTree = "<group>"; };
+		AB650BBD1D93CF1A0086FC86 /* UITextField+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Utility.m"; sourceTree = "<group>"; };
 		AB8CCA8F1D8A87D700793CFD /* SubCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubCategoryViewController.h; sourceTree = "<group>"; };
 		AB8CCA901D8A87D700793CFD /* SubCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubCategoryViewController.m; sourceTree = "<group>"; };
 		AB8CCA911D8A87D700793CFD /* SubCategoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubCategoryViewController.xib; sourceTree = "<group>"; };
@@ -197,8 +200,8 @@
 		6F2E14761D7FE3810020AA94 /* Catagory */ = {
 			isa = PBXGroup;
 			children = (
-				6F2E14731D7FE37B0020AA94 /* UIFont+Utility.h */,
-				6F2E14741D7FE37B0020AA94 /* UIFont+Utility.m */,
+				AB650BBF1D93CF2C0086FC86 /* Font */,
+				AB650BC01D93CF340086FC86 /* TextField */,
 			);
 			name = Catagory;
 			sourceTree = "<group>";
@@ -221,6 +224,24 @@
 				6FFA31F91D7E8F1B0037EAF1 /* UserDataModel.m */,
 			);
 			name = UserDataModel;
+			sourceTree = "<group>";
+		};
+		AB650BBF1D93CF2C0086FC86 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				6F2E14731D7FE37B0020AA94 /* UIFont+Utility.h */,
+				6F2E14741D7FE37B0020AA94 /* UIFont+Utility.m */,
+			);
+			name = Font;
+			sourceTree = "<group>";
+		};
+		AB650BC01D93CF340086FC86 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				AB650BBC1D93CF1A0086FC86 /* UITextField+Utility.h */,
+				AB650BBD1D93CF1A0086FC86 /* UITextField+Utility.m */,
+			);
+			name = TextField;
 			sourceTree = "<group>";
 		};
 		AB8CCA941D8A87DE00793CFD /* SubCategory */ = {
@@ -480,6 +501,7 @@
 				6FFA31FA1D7E8F1B0037EAF1 /* UserDataModel.m in Sources */,
 				211606721D76ACDF00860E2A /* ViewController.m in Sources */,
 				2116066F1D76ACDF00860E2A /* AppDelegate.m in Sources */,
+				AB650BBE1D93CF1A0086FC86 /* UITextField+Utility.m in Sources */,
 				D0688ABC1D7802AE00FF9A05 /* SignUpViewController.m in Sources */,
 				ABB9BB6B1D880EF500E84492 /* addCatagoryTextFieldTableViewCell.m in Sources */,
 				2116066C1D76ACDF00860E2A /* main.m in Sources */,

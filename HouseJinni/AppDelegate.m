@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "SignUpViewController.h"
+#import "Cart.h"
 
 @interface AppDelegate ()
 
@@ -79,4 +80,19 @@
     //for autologin and remember password for customer only
     
 }
+
+//inclde for tabBarController
+//TabBadge
+/*
+- (void)updateCartTabBadge
+{
+    int total = [Cart totalProducts];
+    //UITabBarItem *cartTab = [self.tabBarController.tabBar.items objectAtIndex:1];
+    
+    if(total == 0)
+        cartTab.badgeValue = nil;
+    else
+        cartTab.badgeValue = [NSString stringWithFormat:@"%d", total];
+}
+*/
 @end

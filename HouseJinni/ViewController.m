@@ -11,7 +11,7 @@
 #import "UserDataModel.h"
 #import "UIFont+Utility.h"
 #import "InventoryViewController.h"
-
+#import "HomeViewController.h"
 @interface ViewController ()
 
 @end
@@ -29,6 +29,7 @@
     isMainAdmin = [[self funtionToGetUserDefaultData] boolForKey:@"isMainAdmin"];
     
     NSLog(@"%d",isMainAdmin);
+    
     if (isMainAdmin == true) {
         mainAdminButton.hidden =true;
     }
@@ -72,6 +73,7 @@
     
     //emailIdTextField.textAlignment = UITextAlignmentCenter;
     */
+    
     emailIdTextField.font = [UIFont getDefaultTextFieldFont] ;
     emailIdTextField.placeholder = @"Email Id";
     passwordTextField.placeholder = @"Password";
@@ -175,7 +177,11 @@
         [alt show];
     }
 }
-
+-(void)tempBtn:(id)sender
+{
+    HomeViewController *home = [[HomeViewController alloc]initWithNibName:@"HomeViewController" bundle:nil];
+    [self.navigationController pushViewController:home animated:YES];
+}
 #pragma mark - ScrollView Methods
 -(void)ScrollViewMethods
 {
@@ -204,12 +210,12 @@
     return houseJinniUserDefaults;
 }
 
-/*
+
 -(void)funtionToSetUserDefaultValues
 {
     NSUserDefaults *houseJinniUserDefaults = [NSUserDefaults standardUserDefaults];
     [houseJinniUserDefaults setBool:YES forKey:@"isMainAdmin"];
     [houseJinniUserDefaults synchronize];
 }
- */
+
 @end

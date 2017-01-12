@@ -14,6 +14,20 @@
 		2116067A1D76ACDF00860E2A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 211606781D76ACDF00860E2A /* LaunchScreen.xib */; };
 		211606861D76ACE000860E2A /* HouseJinniTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 211606851D76ACE000860E2A /* HouseJinniTests.m */; };
 		211606901D76AD8F00860E2A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2116068F1D76AD8F00860E2A /* ViewController.xib */; };
+		29C327511E228BD800F2369E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C327501E228BD800F2369E /* Foundation.framework */; };
+		29C327531E228BE400F2369E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C327521E228BE400F2369E /* CoreGraphics.framework */; };
+		29C327551E228BF100F2369E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C327541E228BF100F2369E /* UIKit.framework */; };
+		29C327581E2295B200F2369E /* Products.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C327571E2295B200F2369E /* Products.m */; };
+		29C327621E22C9F000F2369E /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C327611E22C9F000F2369E /* Cart.m */; };
+		29C327671E22CE6000F2369E /* CartItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C327661E22CE6000F2369E /* CartItem.m */; };
+		29C3276F1E22DB8100F2369E /* CheckoutHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C3276E1E22DB8100F2369E /* CheckoutHeaderView.m */; };
+		29C327711E22DB9E00F2369E /* CheckoutHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C327701E22DB9E00F2369E /* CheckoutHeaderView.xib */; };
+		29F451051E2135DA00B89989 /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F451031E2135DA00B89989 /* CartViewController.m */; };
+		29F451061E2135DA00B89989 /* CartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29F451041E2135DA00B89989 /* CartViewController.xib */; };
+		29F4510D1E2195F300B89989 /* ProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F4510B1E2195F300B89989 /* ProductTableViewCell.m */; };
+		29F4510E1E2195F300B89989 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29F4510C1E2195F300B89989 /* ProductTableViewCell.xib */; };
+		29F451181E21A0C400B89989 /* ProductCartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F451161E21A0C400B89989 /* ProductCartCell.m */; };
+		29F451191E21A0C400B89989 /* ProductCartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29F451171E21A0C400B89989 /* ProductCartCell.xib */; };
 		6F2E14751D7FE37B0020AA94 /* UIFont+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2E14741D7FE37B0020AA94 /* UIFont+Utility.m */; };
 		6F7CBBC01D8138DA00F2F541 /* SignUpButtonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7CBBBE1D8138DA00F2F541 /* SignUpButtonTableViewCell.m */; };
 		6F7CBBC11D8138DA00F2F541 /* SignUpButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F7CBBBF1D8138DA00F2F541 /* SignUpButtonTableViewCell.xib */; };
@@ -69,9 +83,30 @@
 		211606841D76ACE000860E2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		211606851D76ACE000860E2A /* HouseJinniTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HouseJinniTests.m; sourceTree = "<group>"; };
 		2116068F1D76AD8F00860E2A /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		29C327501E228BD800F2369E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		29C327521E228BE400F2369E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		29C327541E228BF100F2369E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		29C327561E2295B200F2369E /* Products.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Products.h; sourceTree = "<group>"; };
+		29C327571E2295B200F2369E /* Products.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Products.m; sourceTree = "<group>"; };
+		29C327601E22C9F000F2369E /* Cart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cart.h; sourceTree = "<group>"; };
+		29C327611E22C9F000F2369E /* Cart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cart.m; sourceTree = "<group>"; };
+		29C327651E22CE6000F2369E /* CartItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartItem.h; sourceTree = "<group>"; };
+		29C327661E22CE6000F2369E /* CartItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartItem.m; sourceTree = "<group>"; };
+		29C3276D1E22DB8100F2369E /* CheckoutHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckoutHeaderView.h; sourceTree = "<group>"; };
+		29C3276E1E22DB8100F2369E /* CheckoutHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckoutHeaderView.m; sourceTree = "<group>"; };
+		29C327701E22DB9E00F2369E /* CheckoutHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckoutHeaderView.xib; sourceTree = "<group>"; };
+		29F451021E2135DA00B89989 /* CartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartViewController.h; sourceTree = "<group>"; };
+		29F451031E2135DA00B89989 /* CartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartViewController.m; sourceTree = "<group>"; };
+		29F451041E2135DA00B89989 /* CartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CartViewController.xib; sourceTree = "<group>"; };
+		29F4510A1E2195F300B89989 /* ProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductTableViewCell.h; sourceTree = "<group>"; };
+		29F4510B1E2195F300B89989 /* ProductTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductTableViewCell.m; sourceTree = "<group>"; };
+		29F4510C1E2195F300B89989 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		29F451151E21A0C400B89989 /* ProductCartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCartCell.h; sourceTree = "<group>"; };
+		29F451161E21A0C400B89989 /* ProductCartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCartCell.m; sourceTree = "<group>"; };
+		29F451171E21A0C400B89989 /* ProductCartCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCartCell.xib; sourceTree = "<group>"; };
 		6F2E14731D7FE37B0020AA94 /* UIFont+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Utility.h"; sourceTree = "<group>"; };
 		6F2E14741D7FE37B0020AA94 /* UIFont+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Utility.m"; sourceTree = "<group>"; };
-		6F2E14781D7FED400020AA94 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		6F2E14781D7FED400020AA94 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
 		6F7CBBBD1D8138DA00F2F541 /* SignUpButtonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpButtonTableViewCell.h; sourceTree = "<group>"; };
 		6F7CBBBE1D8138DA00F2F541 /* SignUpButtonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpButtonTableViewCell.m; sourceTree = "<group>"; };
 		6F7CBBBF1D8138DA00F2F541 /* SignUpButtonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpButtonTableViewCell.xib; sourceTree = "<group>"; };
@@ -120,6 +155,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C327551E228BF100F2369E /* UIKit.framework in Frameworks */,
+				29C327531E228BE400F2369E /* CoreGraphics.framework in Frameworks */,
+				29C327511E228BD800F2369E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,11 +176,13 @@
 			children = (
 				D052A8731D780F44004C8306 /* Default-568h@2x.png */,
 				ABB9BB5F1D87FFD700E84492 /* images */,
-				6FFA31FB1D7E8F1F0037EAF1 /* UserDataModel */,
+				29F4511E1E2255AB00B89989 /* Models */,
+				29C327641E22CA0000F2369E /* Utils */,
 				6F2E14761D7FE3810020AA94 /* Catagory */,
 				211606681D76ACDF00860E2A /* HouseJinni */,
 				211606821D76ACDF00860E2A /* HouseJinniTests */,
 				211606671D76ACDF00860E2A /* Products */,
+				29C3274F1E228BD700F2369E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,15 +198,17 @@
 		211606681D76ACDF00860E2A /* HouseJinni */ = {
 			isa = PBXGroup;
 			children = (
+				211606691D76ACDF00860E2A /* Supporting Files */,
 				2116066D1D76ACDF00860E2A /* AppDelegate.h */,
 				2116066E1D76ACDF00860E2A /* AppDelegate.m */,
 				D01507361D78046B005D0BA0 /* LogIn */,
 				D01507351D78045A005D0BA0 /* SignUp */,
 				ABB9BB5E1D87F25700E84492 /* Inventory */,
 				D052A87A1D7812C8004C8306 /* Home */,
+				29F451071E21361000B89989 /* Cart */,
 				211606761D76ACDF00860E2A /* Images.xcassets */,
 				211606781D76ACDF00860E2A /* LaunchScreen.xib */,
-				211606691D76ACDF00860E2A /* Supporting Files */,
+				29F4511A1E22544600B89989 /* UI */,
 			);
 			path = HouseJinni;
 			sourceTree = "<group>";
@@ -174,6 +216,7 @@
 		211606691D76ACDF00860E2A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6F2E14781D7FED400020AA94 /* PrefixHeader.pch */,
 				2116066A1D76ACDF00860E2A /* Info.plist */,
 				2116066B1D76ACDF00860E2A /* main.m */,
 			);
@@ -195,6 +238,120 @@
 				211606841D76ACE000860E2A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		293C60BF1E24158B00781E5B /* CartModel */ = {
+			isa = PBXGroup;
+			children = (
+				29C327651E22CE6000F2369E /* CartItem.h */,
+				29C327661E22CE6000F2369E /* CartItem.m */,
+			);
+			name = CartModel;
+			sourceTree = "<group>";
+		};
+		29C3274F1E228BD700F2369E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29C327541E228BF100F2369E /* UIKit.framework */,
+				29C327521E228BE400F2369E /* CoreGraphics.framework */,
+				29C327501E228BD800F2369E /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		29C327591E22BCFA00F2369E /* ProductModel */ = {
+			isa = PBXGroup;
+			children = (
+				29C327561E2295B200F2369E /* Products.h */,
+				29C327571E2295B200F2369E /* Products.m */,
+			);
+			name = ProductModel;
+			sourceTree = "<group>";
+		};
+		29C327631E22C9F500F2369E /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				29C327601E22C9F000F2369E /* Cart.h */,
+				29C327611E22C9F000F2369E /* Cart.m */,
+			);
+			name = Cart;
+			sourceTree = "<group>";
+		};
+		29C327641E22CA0000F2369E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				29C327631E22C9F500F2369E /* Cart */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		29F451071E21361000B89989 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				29F451021E2135DA00B89989 /* CartViewController.h */,
+				29F451031E2135DA00B89989 /* CartViewController.m */,
+				29F451041E2135DA00B89989 /* CartViewController.xib */,
+			);
+			name = Cart;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		29F4510F1E2195FC00B89989 /* ProductCell */ = {
+			isa = PBXGroup;
+			children = (
+				29F4510A1E2195F300B89989 /* ProductTableViewCell.h */,
+				29F4510B1E2195F300B89989 /* ProductTableViewCell.m */,
+				29F4510C1E2195F300B89989 /* ProductTableViewCell.xib */,
+			);
+			name = ProductCell;
+			sourceTree = "<group>";
+		};
+		29F4511A1E22544600B89989 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				29F4511D1E2254FF00B89989 /* Cell */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		29F4511B1E22547500B89989 /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				29C3276D1E22DB8100F2369E /* CheckoutHeaderView.h */,
+				29C3276E1E22DB8100F2369E /* CheckoutHeaderView.m */,
+				29C327701E22DB9E00F2369E /* CheckoutHeaderView.xib */,
+			);
+			name = Checkout;
+			sourceTree = "<group>";
+		};
+		29F4511C1E22548D00B89989 /* ProductCart */ = {
+			isa = PBXGroup;
+			children = (
+				29F451151E21A0C400B89989 /* ProductCartCell.h */,
+				29F451161E21A0C400B89989 /* ProductCartCell.m */,
+				29F451171E21A0C400B89989 /* ProductCartCell.xib */,
+			);
+			name = ProductCart;
+			sourceTree = "<group>";
+		};
+		29F4511D1E2254FF00B89989 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				29F4510F1E2195FC00B89989 /* ProductCell */,
+				29F4511C1E22548D00B89989 /* ProductCart */,
+				29F4511B1E22547500B89989 /* Checkout */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		29F4511E1E2255AB00B89989 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6FFA31FB1D7E8F1F0037EAF1 /* UserDataModel */,
+				29C327591E22BCFA00F2369E /* ProductModel */,
+				293C60BF1E24158B00781E5B /* CartModel */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		6F2E14761D7FE3810020AA94 /* Catagory */ = {
@@ -219,7 +376,6 @@
 		6FFA31FB1D7E8F1F0037EAF1 /* UserDataModel */ = {
 			isa = PBXGroup;
 			children = (
-				6F2E14781D7FED400020AA94 /* PrefixHeader.pch */,
 				6FFA31F81D7E8F1B0037EAF1 /* UserDataModel.h */,
 				6FFA31F91D7E8F1B0037EAF1 /* UserDataModel.m */,
 			);
@@ -424,7 +580,7 @@
 		2116065E1D76ACDE00860E2A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Iraniya;
 				TargetAttributes = {
 					211606651D76ACDF00860E2A = {
@@ -469,7 +625,9 @@
 				6F7CBBC11D8138DA00F2F541 /* SignUpButtonTableViewCell.xib in Resources */,
 				ABB9BB5D1D87F25200E84492 /* InventoryViewController.xib in Resources */,
 				AB8CCAA61D8A98DB00793CFD /* addSubCategoryViewController.xib in Resources */,
+				29F451191E21A0C400B89989 /* ProductCartCell.xib in Resources */,
 				6F7CBBC41D8139D600F2F541 /* unchecked_checkbox.png in Resources */,
+				29C327711E22DB9E00F2369E /* CheckoutHeaderView.xib in Resources */,
 				D0688ABD1D7802AE00FF9A05 /* SignUpViewController.xib in Resources */,
 				AB8CCA991D8A898F00793CFD /* PickerCustomTableViewCell.xib in Resources */,
 				211606771D76ACDF00860E2A /* Images.xcassets in Resources */,
@@ -477,6 +635,8 @@
 				ABB9BB661D88072900E84492 /* AddMainCategoryViewController.xib in Resources */,
 				D052A8791D7812BF004C8306 /* HomeViewController.xib in Resources */,
 				AB8CCA9F1D8A8FDE00793CFD /* AddItemViewController.xib in Resources */,
+				29F4510E1E2195F300B89989 /* ProductTableViewCell.xib in Resources */,
+				29F451061E2135DA00B89989 /* CartViewController.xib in Resources */,
 				D052A8741D780F44004C8306 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,22 +656,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB8CCA981D8A898F00793CFD /* PickerCustomTableViewCell.m in Sources */,
+				29C3276F1E22DB8100F2369E /* CheckoutHeaderView.m in Sources */,
 				D0688AC11D78041A00FF9A05 /* SignUpTableViewCell.m in Sources */,
 				AB8CCA921D8A87D700793CFD /* SubCategoryViewController.m in Sources */,
 				6FFA31FA1D7E8F1B0037EAF1 /* UserDataModel.m in Sources */,
 				211606721D76ACDF00860E2A /* ViewController.m in Sources */,
 				2116066F1D76ACDF00860E2A /* AppDelegate.m in Sources */,
 				AB650BBE1D93CF1A0086FC86 /* UITextField+Utility.m in Sources */,
+				29C327581E2295B200F2369E /* Products.m in Sources */,
 				D0688ABC1D7802AE00FF9A05 /* SignUpViewController.m in Sources */,
 				ABB9BB6B1D880EF500E84492 /* addCatagoryTextFieldTableViewCell.m in Sources */,
 				2116066C1D76ACDF00860E2A /* main.m in Sources */,
 				AB8CCAA51D8A98DB00793CFD /* addSubCategoryViewController.m in Sources */,
 				D052A8781D7812BF004C8306 /* HomeViewController.m in Sources */,
+				29F4510D1E2195F300B89989 /* ProductTableViewCell.m in Sources */,
 				6F7CBBC01D8138DA00F2F541 /* SignUpButtonTableViewCell.m in Sources */,
 				6F2E14751D7FE37B0020AA94 /* UIFont+Utility.m in Sources */,
 				ABB9BB5C1D87F25200E84492 /* InventoryViewController.m in Sources */,
 				AB8CCA9E1D8A8FDE00793CFD /* AddItemViewController.m in Sources */,
+				29F451051E2135DA00B89989 /* CartViewController.m in Sources */,
+				29C327621E22C9F000F2369E /* Cart.m in Sources */,
 				ABB9BB651D88072900E84492 /* AddMainCategoryViewController.m in Sources */,
+				29C327671E22CE6000F2369E /* CartItem.m in Sources */,
+				29F451181E21A0C400B89989 /* ProductCartCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,8 +725,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -602,8 +771,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -631,7 +802,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HouseJinni/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iraniya.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -643,7 +814,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HouseJinni/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iraniya.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -663,7 +834,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = HouseJinniTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iraniya.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -680,7 +851,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = HouseJinniTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iraniya.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

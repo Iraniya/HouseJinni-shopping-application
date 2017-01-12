@@ -1,3 +1,4 @@
+
 //
 //  PrefixHeader.pch
 //  HouseJinni
@@ -18,3 +19,10 @@
 
 #import "UIFont+Utility.h"
 #endif /* PrefixHeader_pch */
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Constants.h"
+
+#endif

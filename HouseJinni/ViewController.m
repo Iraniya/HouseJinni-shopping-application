@@ -12,6 +12,8 @@
 #import "UIFont+Utility.h"
 #import "InventoryViewController.h"
 #import "HomeViewController.h"
+#import "HomeCollectionViewController.h"
+
 @interface ViewController ()
 
 @end
@@ -114,9 +116,9 @@
     
     NSString *emailId = emailIdTextField.text;
     NSString *password = passwordTextField.text;
-    
-    BOOL isDataMatch = [self checkEmailPassword:emailId AndPasswordIs:password];
-    isDataMatch = true;
+    BOOL isDataMatch = false;
+    isDataMatch = [self checkEmailPassword:emailId AndPasswordIs:password];
+    //isDataMatch = true;
     if (isDataMatch) {
         InventoryViewController *inventoryViewControllerObject = [[InventoryViewController alloc]initWithNibName:@"InventoryViewController" bundle:nil];
         [self.navigationController pushViewController:inventoryViewControllerObject animated:YES];
@@ -130,7 +132,8 @@
 
 -(BOOL)checkEmailPassword:(NSString*)emailId AndPasswordIs :(NSString*)password
 {
-    //get data than check
+    NSMutableDictionary* UserLoginDetailsDict=[self ReadinguserDataFromplist];
+    
     if ([emailId isEqualToString:emailId]) {
         if ([password isEqualToString:password]) {
             return true;
@@ -182,6 +185,13 @@
     HomeViewController *home = [[HomeViewController alloc]initWithNibName:@"HomeViewController" bundle:nil];
     [self.navigationController pushViewController:home animated:YES];
 }
+
+-(void)CollectionVIew:(id)sender
+{
+    HomeCollectionViewController *homeCollection = [[HomeCollectionViewController alloc]initWithNibName:@"HomeCollectionViewController" bundle:nil];
+    [self.navigationController pushViewController:homeCollection animated:YES];
+}
+
 #pragma mark - ScrollView Methods
 -(void)ScrollViewMethods
 {
@@ -217,5 +227,13 @@
     [houseJinniUserDefaults setBool:YES forKey:@"isMainAdmin"];
     [houseJinniUserDefaults synchronize];
 }
-
+-(NSMutableDictionary*)ReadinguserDataFromplist
+{
+    // Find out the path of recipes.plist
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"userLogin" ofType:@"plist"];
+    
+    // Load the file content and read the data into arrays
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    return dict;
+}
 @end

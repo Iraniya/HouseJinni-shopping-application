@@ -14,6 +14,12 @@
 		2116067A1D76ACDF00860E2A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 211606781D76ACDF00860E2A /* LaunchScreen.xib */; };
 		211606861D76ACE000860E2A /* HouseJinniTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 211606851D76ACE000860E2A /* HouseJinniTests.m */; };
 		211606901D76AD8F00860E2A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2116068F1D76AD8F00860E2A /* ViewController.xib */; };
+		295035A91E34E0DE00BA3BFD /* HomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 295035A71E34E0DE00BA3BFD /* HomeCollectionViewCell.m */; };
+		295035AA1E34E0DE00BA3BFD /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 295035A81E34E0DE00BA3BFD /* HomeCollectionViewCell.xib */; };
+		295035AE1E34E0FC00BA3BFD /* HomeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 295035AC1E34E0FC00BA3BFD /* HomeCollectionViewController.m */; };
+		295035AF1E34E0FC00BA3BFD /* HomeCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 295035AD1E34E0FC00BA3BFD /* HomeCollectionViewController.xib */; };
+		295035B11E34E4EE00BA3BFD /* RecipePhoto in Resources */ = {isa = PBXBuildFile; fileRef = 295035B01E34E4EE00BA3BFD /* RecipePhoto */; };
+		295035B31E34E93900BA3BFD /* userLogin.plist in Resources */ = {isa = PBXBuildFile; fileRef = 295035B21E34E93900BA3BFD /* userLogin.plist */; };
 		29C327511E228BD800F2369E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C327501E228BD800F2369E /* Foundation.framework */; };
 		29C327531E228BE400F2369E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C327521E228BE400F2369E /* CoreGraphics.framework */; };
 		29C327551E228BF100F2369E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C327541E228BF100F2369E /* UIKit.framework */; };
@@ -83,6 +89,14 @@
 		211606841D76ACE000860E2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		211606851D76ACE000860E2A /* HouseJinniTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HouseJinniTests.m; sourceTree = "<group>"; };
 		2116068F1D76AD8F00860E2A /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		295035A61E34E0DE00BA3BFD /* HomeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewCell.h; sourceTree = "<group>"; };
+		295035A71E34E0DE00BA3BFD /* HomeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewCell.m; sourceTree = "<group>"; };
+		295035A81E34E0DE00BA3BFD /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		295035AB1E34E0FC00BA3BFD /* HomeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewController.h; sourceTree = "<group>"; };
+		295035AC1E34E0FC00BA3BFD /* HomeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewController.m; sourceTree = "<group>"; };
+		295035AD1E34E0FC00BA3BFD /* HomeCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCollectionViewController.xib; sourceTree = "<group>"; };
+		295035B01E34E4EE00BA3BFD /* RecipePhoto */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RecipePhoto; sourceTree = "<group>"; };
+		295035B21E34E93900BA3BFD /* userLogin.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = userLogin.plist; sourceTree = "<group>"; };
 		29C327501E228BD800F2369E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		29C327521E228BE400F2369E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29C327541E228BF100F2369E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -204,7 +218,7 @@
 				D01507361D78046B005D0BA0 /* LogIn */,
 				D01507351D78045A005D0BA0 /* SignUp */,
 				ABB9BB5E1D87F25700E84492 /* Inventory */,
-				D052A87A1D7812C8004C8306 /* Home */,
+				D052A87A1D7812C8004C8306 /* Home List */,
 				29F451071E21361000B89989 /* Cart */,
 				211606761D76ACDF00860E2A /* Images.xcassets */,
 				211606781D76ACDF00860E2A /* LaunchScreen.xib */,
@@ -219,6 +233,7 @@
 				6F2E14781D7FED400020AA94 /* PrefixHeader.pch */,
 				2116066A1D76ACDF00860E2A /* Info.plist */,
 				2116066B1D76ACDF00860E2A /* main.m */,
+				295035B21E34E93900BA3BFD /* userLogin.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -247,6 +262,27 @@
 				29C327661E22CE6000F2369E /* CartItem.m */,
 			);
 			name = CartModel;
+			sourceTree = "<group>";
+		};
+		295035771E34CF4400BA3BFD /* Home Collection */ = {
+			isa = PBXGroup;
+			children = (
+				295035AB1E34E0FC00BA3BFD /* HomeCollectionViewController.h */,
+				295035AC1E34E0FC00BA3BFD /* HomeCollectionViewController.m */,
+				295035AD1E34E0FC00BA3BFD /* HomeCollectionViewController.xib */,
+				295035A01E34DCC000BA3BFD /* Cell */,
+			);
+			name = "Home Collection";
+			sourceTree = "<group>";
+		};
+		295035A01E34DCC000BA3BFD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				295035A61E34E0DE00BA3BFD /* HomeCollectionViewCell.h */,
+				295035A71E34E0DE00BA3BFD /* HomeCollectionViewCell.m */,
+				295035A81E34E0DE00BA3BFD /* HomeCollectionViewCell.xib */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		29C3274F1E228BD700F2369E /* Frameworks */ = {
@@ -466,6 +502,7 @@
 		ABB9BB5F1D87FFD700E84492 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				295035B01E34E4EE00BA3BFD /* RecipePhoto */,
 				6F7CBBC31D8139D600F2F541 /* unchecked_checkbox.png */,
 				6F7CBBC51D8139EE00F2F541 /* checked_checkbox.png */,
 				ABB9BB601D87FFD700E84492 /* AddButton.png */,
@@ -526,14 +563,15 @@
 			name = LogIn;
 			sourceTree = "<group>";
 		};
-		D052A87A1D7812C8004C8306 /* Home */ = {
+		D052A87A1D7812C8004C8306 /* Home List */ = {
 			isa = PBXGroup;
 			children = (
 				D052A8751D7812BF004C8306 /* HomeViewController.h */,
 				D052A8761D7812BF004C8306 /* HomeViewController.m */,
 				D052A8771D7812BF004C8306 /* HomeViewController.xib */,
+				295035771E34CF4400BA3BFD /* Home Collection */,
 			);
-			name = Home;
+			name = "Home List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -617,6 +655,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0688AC21D78041A00FF9A05 /* SignUpTableViewCell.xib in Resources */,
+				295035B31E34E93900BA3BFD /* userLogin.plist in Resources */,
 				ABB9BB611D87FFD700E84492 /* AddButton.png in Resources */,
 				6F7CBBC61D8139EE00F2F541 /* checked_checkbox.png in Resources */,
 				ABB9BB6C1D880EF500E84492 /* addCatagoryTextFieldTableViewCell.xib in Resources */,
@@ -626,6 +665,8 @@
 				ABB9BB5D1D87F25200E84492 /* InventoryViewController.xib in Resources */,
 				AB8CCAA61D8A98DB00793CFD /* addSubCategoryViewController.xib in Resources */,
 				29F451191E21A0C400B89989 /* ProductCartCell.xib in Resources */,
+				295035AF1E34E0FC00BA3BFD /* HomeCollectionViewController.xib in Resources */,
+				295035B11E34E4EE00BA3BFD /* RecipePhoto in Resources */,
 				6F7CBBC41D8139D600F2F541 /* unchecked_checkbox.png in Resources */,
 				29C327711E22DB9E00F2369E /* CheckoutHeaderView.xib in Resources */,
 				D0688ABD1D7802AE00FF9A05 /* SignUpViewController.xib in Resources */,
@@ -634,6 +675,7 @@
 				AB8CCA931D8A87D700793CFD /* SubCategoryViewController.xib in Resources */,
 				ABB9BB661D88072900E84492 /* AddMainCategoryViewController.xib in Resources */,
 				D052A8791D7812BF004C8306 /* HomeViewController.xib in Resources */,
+				295035AA1E34E0DE00BA3BFD /* HomeCollectionViewCell.xib in Resources */,
 				AB8CCA9F1D8A8FDE00793CFD /* AddItemViewController.xib in Resources */,
 				29F4510E1E2195F300B89989 /* ProductTableViewCell.xib in Resources */,
 				29F451061E2135DA00B89989 /* CartViewController.xib in Resources */,
@@ -662,6 +704,7 @@
 				6FFA31FA1D7E8F1B0037EAF1 /* UserDataModel.m in Sources */,
 				211606721D76ACDF00860E2A /* ViewController.m in Sources */,
 				2116066F1D76ACDF00860E2A /* AppDelegate.m in Sources */,
+				295035AE1E34E0FC00BA3BFD /* HomeCollectionViewController.m in Sources */,
 				AB650BBE1D93CF1A0086FC86 /* UITextField+Utility.m in Sources */,
 				29C327581E2295B200F2369E /* Products.m in Sources */,
 				D0688ABC1D7802AE00FF9A05 /* SignUpViewController.m in Sources */,
@@ -675,6 +718,7 @@
 				ABB9BB5C1D87F25200E84492 /* InventoryViewController.m in Sources */,
 				AB8CCA9E1D8A8FDE00793CFD /* AddItemViewController.m in Sources */,
 				29F451051E2135DA00B89989 /* CartViewController.m in Sources */,
+				295035A91E34E0DE00BA3BFD /* HomeCollectionViewCell.m in Sources */,
 				29C327621E22C9F000F2369E /* Cart.m in Sources */,
 				ABB9BB651D88072900E84492 /* AddMainCategoryViewController.m in Sources */,
 				29C327671E22CE6000F2369E /* CartItem.m in Sources */,

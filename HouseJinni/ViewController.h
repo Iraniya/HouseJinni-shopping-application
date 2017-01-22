@@ -33,5 +33,6 @@
 - (IBAction)signInBtn:(id)sender;
 - (IBAction)signUpbtn:(id)sender;
 - (IBAction)tempBtn:(id)sender;
+- (IBAction)CollectionVIew:(id)sender;
 @end
 
